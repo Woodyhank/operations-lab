@@ -1,9 +1,9 @@
-# Operations Lab — Homepage V1.3.1
+# Operations Lab — V1.3.2
 
-Mobile-first correction of V1.3.
+Mobile Hero correction.
 
-Main fix:
-- Hero statement is always visible before the industrial image on mobile.
-- Industrial image is moved below the hero copy with controlled height/cropping.
-- Original V1.3 editorial direction is preserved.
-- Desktop structure remains unchanged.
+- Original V1 editorial direction preserved.
+- Hero statement appears before the image on mobile.
+- Industrial image is a controlled 300px mobile band.
+- Image uses a fixed crop (`center 42%`) to keep the architecture and silhouette visible.
+- No other content direction changes.
