@@ -1,10 +1,9 @@
-# Operations Lab — Homepage V1.3
+# Operations Lab — Homepage V1.3.1
 
-Editorial homepage refactor with five sections:
-1. The Statement
-2. The Idea
-3. Operations × Industry
-4. Explore the Lab
-5. About Vincent
+Mobile-first correction of V1.3.
 
-The detailed Playbook, Case Studies, Insights and Operations Loop are intentionally moved off the homepage for later dedicated pages.
+Main fix:
+- Hero statement is always visible before the industrial image on mobile.
+- Industrial image is moved below the hero copy with controlled height/cropping.
+- Original V1.3 editorial direction is preserved.
+- Desktop structure remains unchanged.
