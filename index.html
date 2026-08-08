@@ -36,148 +36,63 @@ section{padding:105px 0;border-bottom:1px solid var(--line)}.section-head{displa
 footer{padding:55px 0}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:50px}.footer-note{color:#666;max-width:300px}.footer-links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;font-size:12px;font-weight:800;text-transform:uppercase}
 .fade{opacity:0;transform:translateY(20px);transition:.7s ease}.fade.visible{opacity:1;transform:none}
 @media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr}.hero-image{min-height:420px}.industry-intro{grid-template-columns:1fr;gap:25px}.comparison{grid-template-columns:1fr}.equal{margin:-18px auto;position:relative}.compare-col:first-child{border-right:1px solid var(--line)}.compare-col:last-child{border-left:1px solid var(--line)}.failure-cycle{grid-template-columns:1fr;gap:0}.cycle-step{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.cycle-step:after{display:none}.principles{grid-template-columns:1fr 1fr}.loop-detail{border-left:0;border-top:1px solid var(--red);padding:20px 0 0}.container{width:min(var(--max),calc(100% - 32px))}.hero{grid-template-columns:1fr}.hero-copy{padding:70px 0}.hero-image{min-height:360px}.section-head,.loop,.about{grid-template-columns:1fr;gap:30px}.cards,.playbook-grid,.case-grid,.insight-grid{grid-template-columns:1fr}.comparison{grid-template-columns:1fr}.equal{display:none}.principles{grid-template-columns:1fr 1fr}.principles div:nth-child(2n){border-right:0}.footer-grid{grid-template-columns:1fr}}
+
+/* V1.3 editorial homepage */
+.idea-section{padding:150px 0 170px}.editorial-idea{display:grid;grid-template-columns:1.35fr .65fr;gap:90px;align-items:end;margin-top:35px}.editorial-idea h2{font-size:clamp(48px,6vw,92px)}.editorial-idea h2 span{color:var(--red)}.idea-lead{font-size:19px;color:#555;max-width:460px;margin:0 0 35px}.idea-meta{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:13px;font-size:9px;font-weight:900;letter-spacing:.1em;color:#777}.industry-line{margin-top:70px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}.industry-line-item{padding:28px 20px 30px;border-right:1px solid var(--line)}.industry-line-item:last-child{border-right:0}.industry-line-item span{display:block;color:var(--red);font-size:10px;font-weight:900;margin-bottom:26px}.industry-line-item strong{display:block;font-size:16px;letter-spacing:-.02em}.industry-line-item small{display:block;color:#777;font-size:12px;margin-top:8px;line-height:1.4}.industry-bottom{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-top:38px}.industry-bottom p{font-size:18px;max-width:700px;color:#555;margin:0}.industry-bottom p strong{color:var(--ink)}.lab-section{background:var(--soft)}.lab-intro{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-top:35px}.lab-intro h2{font-size:clamp(48px,5vw,76px)}.lab-intro p{font-size:17px;color:#666;max-width:460px}.lab-links{margin-top:65px;border-top:1px solid #d6d6d0}.lab-link{display:grid;grid-template-columns:80px 1fr 40px;align-items:center;gap:25px;padding:25px 0;border-bottom:1px solid #d6d6d0;transition:.2s}.lab-link:hover{padding-left:10px}.lab-link>span{font-size:10px;color:var(--red);font-weight:900}.lab-link h3{font-size:30px}.lab-link p{margin:5px 0 0;color:#777;font-size:13px}.lab-link b{font-size:22px;color:var(--red);text-align:right}.about-minimal{padding:145px 0}.about-row{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:end;margin-top:35px}.about-row h2{font-size:clamp(58px,7vw,100px)}.about-row h2 span{color:var(--red)}.about-lead{font-weight:900;color:var(--ink)!important;font-size:18px!important}.about-row p{color:#666;max-width:500px}.about-actions{display:flex;align-items:center;gap:25px}.contact-link{font-size:11px;font-weight:900;text-transform:uppercase;border-bottom:1px solid var(--red);padding-bottom:5px}
+@media(max-width:900px){.idea-section{padding:100px 0 110px}.editorial-idea,.lab-intro,.about-row{grid-template-columns:1fr;gap:30px}.editorial-idea h2{font-size:clamp(44px,11vw,70px)}.idea-meta{margin-top:35px;display:block}.idea-meta span{display:block;margin-bottom:8px}.industry-line{grid-template-columns:1fr}.industry-line-item{border-right:0;border-bottom:1px solid var(--line);padding:23px 0}.industry-line-item:last-child{border-bottom:0}.industry-line-item span{margin-bottom:12px}.industry-bottom{display:block;margin-top:30px}.industry-bottom .read{margin-top:25px}.lab-intro{gap:10px}.lab-links{margin-top:45px}.lab-link{grid-template-columns:35px 1fr 25px;gap:15px}.lab-link h3{font-size:23px}.about-minimal{padding:100px 0}.about-row h2{font-size:clamp(52px,14vw,80px)}}
+
 </style>
 </head>
 <body>
 <nav><div class="container">
   <a class="logo" href="#">OPERATIONS <span>LAB</span><small>BY VINCENT DEFARGE</small></a>
-  <div class="navlinks"><a href="#perspective">Perspective</a><a href="#loop">Operations Loop</a><a href="#industry">Industry</a><a href="#playbook">Playbook</a><a href="#cases">Case Studies</a><a href="#insights">Insights</a><a href="#about">About</a></div>
+  <div class="navlinks"><a href="#idea">Perspective</a><a href="#industry">Operations × Industry</a><a href="#lab">Explore the Lab</a><a href="#about">About</a></div>
   <a class="connect" href="#about">Let's connect ↗</a>
 </div></nav>
-
 <main>
 <section class="hero"><div class="container hero-copy fade">
   <div class="kicker">01 — The Statement</div><h1>OPERATIONS ARE NOT WHAT HAPPENS AFTER <span>PRODUCTION.</span></h1>
   <div class="hero-sub">Operations start before production.</div>
-  <p class="hero-desc">A personal laboratory exploring Operations, Reliability and Service Management — and how better operational thinking creates better outcomes.</p>
-  <a class="cta" href="#perspective">Explore the lab →</a>
+  <p class="hero-desc">A personal laboratory exploring Operations, Reliability and Service Management — and what industrial thinking can teach us about better operations.</p>
+  <a class="cta" href="#idea">Explore the lab →</a>
   <div class="hero-meta"><strong>Vincent Defarge</strong>Operations · Reliability · Service Management</div>
 </div><div class="hero-image"></div></section>
-
-<section id="perspective"><div class="container fade"><div class="section-head">
-  <div><div class="kicker">02 — Good Operations</div><h2>WHAT DOES “GOOD OPERATIONS” ACTUALLY MEAN?</h2></div>
-  <p class="lead">Operations is not simply about keeping things running. It is about designing, building and operating services with reliability in mind — while continuously learning from what happens in production.</p>
-</div><div class="cards">
-  <article class="card"><div class="num">01</div><h3>RELIABLE</h3><p><strong>Services you can trust.</strong><br>Services behave as expected, consistently and predictably.</p></article>
-  <article class="card"><div class="num">02</div><h3>RESILIENT</h3><p><strong>Services that recover.</strong><br>When something fails, the organization can detect, respond and recover.</p></article>
-  <article class="card"><div class="num">03</div><h3>CONTINUOUSLY IMPROVING</h3><p><strong>Operations that learn.</strong><br>Every incident, signal and experience creates an opportunity to improve.</p></article>
-</div><div class="quote">RELIABILITY IS NOT A METRIC.<br>IT IS A DESIGN CHOICE.</div></div></section>
-
-<section id="loop"><div class="container fade"><div class="section-head">
-  <div><div class="kicker">03 — The Operations Loop</div><h2>OPERATIONS IS NOT A PHASE.</h2></div>
-  <p class="lead">It is a continuous lifecycle. The way a service is designed shapes how it will be operated. What happens in production should continuously shape what comes next.</p>
-</div><div class="loop">
-  <div class="loop-copy"><h3>OPERATIONS IS A LIFECYCLE.</h3><p>Every stage influences the next. Design for operability, build for reliability, run with discipline, learn from reality and improve the system.</p><a class="read" href="#playbook">Explore the Playbook →</a></div>
-  <div class="loop-svg" id="operationsLoop">
-    <div class="loop-track"></div>
-    <button class="node active" data-stage="DESIGN">DESIGN</button>
-    <button class="node" data-stage="BUILD">BUILD</button>
-    <button class="node" data-stage="RUN">RUN</button>
-    <button class="node" data-stage="LEARN">LEARN</button>
-    <button class="node" data-stage="IMPROVE">IMPROVE</button>
-    <div class="center">A CONTINUOUS<br>CYCLE OF VALUE</div>
-  </div>
-  <div class="loop-detail" id="loopDetail"><div class="detail-kicker">01 / DESIGN</div><h3>MAKE IT OPERABLE.</h3><p>The decisions made here shape everything that follows.</p><span>Architecture · Service Design · Requirements</span></div>
-</div><div class="quote">THE BEST OPERATIONS ARE DESIGNED TO IMPROVE THEMSELVES.</div></div></section>
-
-<section id="industry" class="industry"><div class="container fade">
-  <div class="section-head">
-    <div><div class="kicker">04 — Operations × Industry</div><h2>TWO OPERATIONAL WORLDS. ONE SHARED DISCIPLINE.</h2></div>
-    <p class="lead">Industrial Operations and IT Operations operate different systems, but the fundamentals are familiar: detect, understand, recover, learn and improve.</p>
-  </div>
-  <div class="industry-intro">
-    <div class="industry-statement">WHAT CAN IT OPERATIONS LEARN FROM <span>INDUSTRY?</span></div>
-    <div class="industry-note">Industrial environments have been solving problems of reliability, maintenance, failure, recovery and continuous improvement for decades. The technologies differ. The operational questions often do not.</div>
-  </div>
-  <div class="comparison">
-    <div class="compare-col">
-      <h3>INDUSTRIAL OPERATIONS</h3>
-      <div>Machine <span>asset</span></div><div>Maintenance <span>prevention</span></div><div>Breakdown <span>failure</span></div><div>MTBF <span>reliability</span></div><div>MTTR <span>recovery</span></div><div>Production <span>flow</span></div><div>Quality <span>outcome</span></div>
-    </div>
-    <div class="equal">=</div>
-    <div class="compare-col">
-      <h3>IT OPERATIONS</h3>
-      <div>Service <span>asset</span></div><div>Operations <span>prevention</span></div><div>Incident <span>failure</span></div><div>Reliability <span>reliability</span></div><div>Recoverability <span>recovery</span></div><div>Digital service <span>flow</span></div><div>Service quality <span>outcome</span></div>
-    </div>
-  </div>
-  <div class="failure-cycle">
-    <div class="cycle-step"><div class="num">01</div><h3>DETECT</h3><p>Something deviates from the expected behavior.</p></div>
-    <div class="cycle-step"><div class="num">02</div><h3>UNDERSTAND</h3><p>Find what is actually happening.</p></div>
-    <div class="cycle-step"><div class="num">03</div><h3>RECOVER</h3><p>Restore the system and contain the impact.</p></div>
-    <div class="cycle-step"><div class="num">04</div><h3>LEARN</h3><p>Understand why it happened.</p></div>
-    <div class="cycle-step"><div class="num">05</div><h3>IMPROVE</h3><p>Change the system so it performs better next time.</p></div>
-  </div>
-  <div class="industry-quote">A FAILURE IS NOT THE END OF THE PROCESS.<br><span>IT IS THE BEGINNING OF THE LEARNING CYCLE.</span></div>
-  <div class="principles">
-    <div><span>01</span><strong>Prevention beats reaction.</strong><span>Build stability before failure.</span></div>
-    <div><span>02</span><strong>The system matters more than the individual failure.</strong><span>Fix causes, not people.</span></div>
-    <div><span>03</span><strong>Standardization creates stability.</strong><span>Make good practice repeatable.</span></div>
-    <div><span>04</span><strong>Problems should be made visible.</strong><span>Visibility enables learning.</span></div>
-    <div><span>05</span><strong>The best improvement changes the system.</strong><span>Turn experience into better design.</span></div>
+<section id="idea" class="idea-section"><div class="container fade">
+  <div class="kicker">02 — The Idea</div><div class="editorial-idea">
+    <h2>GOOD OPERATIONS ARE DESIGNED,<br><span>NOT SIMPLY MANAGED.</span></h2>
+    <div><p class="idea-lead">Reliability is not an outcome of operations. It is built into the way we design, operate and improve them.</p>
+    <div class="idea-meta"><span>02 / 05</span><span>OPERATIONS · RELIABILITY · IMPROVEMENT</span></div></div>
   </div>
 </div></section>
-
-<section id="playbook"><div class="container fade"><div class="section-head">
-  <div><div class="kicker">05 — The Playbook</div><h2>FROM PRINCIPLES TO PRACTICE.</h2></div><p class="lead">Frameworks, methods and practical approaches for building reliable, resilient and continuously improving Operations.</p>
-</div><div class="playbook-grid">
-  <article class="play-card"><div class="num">01 — RUN</div><h3>KEEP SERVICES RUNNING.</h3><ul><li>Incident Management</li><li>Change Management</li><li>Service Management</li><li>Observability</li><li>Service Level Management</li></ul><div class="read">Explore →</div></article>
-  <article class="play-card"><div class="num">02 — IMPROVE</div><h3>MAKE OPERATIONS BETTER.</h3><ul><li>Problem Management</li><li>Root Cause Analysis</li><li>Continuous Improvement</li><li>Reliability Engineering</li><li>Automation</li></ul><div class="read">Explore →</div></article>
-  <article class="play-card"><div class="num">03 — DESIGN</div><h3>MAKE SERVICES OPERABLE.</h3><ul><li>Operational Readiness</li><li>Application Criticality</li><li>Business Continuity</li><li>Service Design</li><li>Architecture & Service Mapping</li></ul><div class="read">Explore →</div></article>
-</div></div></section>
-
-<section id="cases"><div class="container fade"><div class="section-head">
-  <div><div class="kicker">06 — Case Studies</div><h2>OPERATIONS IN THE REAL WORLD.</h2></div><p class="lead">Ideas become valuable when they survive contact with reality.</p>
-</div><div class="case-grid">
-  <article class="case"><div class="num">CASE 01</div><h3>Rethinking OS Patching Operations</h3><p>Challenge → Context → Approach → Experiment → Outcome → Lessons.</p><div class="read">What I would do differently →</div></article>
-  <article class="case"><div class="num">CASE 02</div><h3>From Application Criticality to Business Resilience</h3><p>Connecting business processes, applications, services and infrastructure.</p><div class="read">What I would do differently →</div></article>
-  <article class="case"><div class="num">CASE 03</div><h3>Building a More Integrated Service Management Model</h3><p>Exploring operating models, ownership, governance and continuous improvement.</p><div class="read">What I would do differently →</div></article>
-</div></div></section>
-
-<section id="insights"><div class="container fade"><div class="section-head">
-  <div><div class="kicker">07 — Insights</div><h2>IDEAS FROM THE OPERATIONS FLOOR.</h2></div><p class="lead">Observations, questions and lessons from the world of Operations, Technology and Industry.</p>
-</div><div class="insight-grid">
-  <article class="insight"><div class="num">PERSPECTIVE</div><h3>WHY OPERATIONS SHOULD START BEFORE GO-LIVE</h3><p>A service isn't operational because it has been deployed.</p><div class="read">Read insight →</div></article>
-  <article class="insight"><div class="num">FRAMEWORK</div><h3>OPERATIONAL READINESS: THE MISSING LINK BETWEEN BUILD AND RUN</h3><p>A framework for making sure services are truly ready to be operated.</p><div class="read">Read insight →</div></article>
-  <article class="insight"><div class="num">FIELD NOTE</div><h3>WHAT A PATCHING CAMPAIGN TAUGHT ME ABOUT SYSTEM DESIGN</h3><p>Notes from a real operational challenge and what changed the thinking.</p><div class="read">Read insight →</div></article>
-</div><div class="quote" style="text-align:left;max-width:760px;margin-left:0">I DON'T HAVE ALL THE ANSWERS.<br><span style="color:var(--red)">I'M INTERESTED IN BETTER QUESTIONS.</span></div></div></section>
-
-<section id="about"><div class="container fade"><div class="section-head">
-  <div><div class="kicker">08 — About</div><h2>I WORK AT THE INTERSECTION OF PRODUCT, OPERATIONS AND INDUSTRY.</h2></div><p class="lead">Who is behind Operations Lab?</p>
-</div><div class="about" style="margin-top:60px">
-  <div class="portrait"></div>
-  <div><p style="font-size:19px;color:#222">I'm Vincent.</p><p>I work at the intersection of Product Management, IT Operations and Service Management, in a large industrial environment.</p><p>My work sits where technology meets reality: services have to run, people have to collaborate, problems have to be solved and systems have to continuously improve.</p><p>Working in an industrial company has shaped the way I think about Operations. Industrial environments have been dealing with reliability, maintenance, failure, recovery and continuous improvement for decades. IT Operations faces many of the same fundamental challenges — in a different environment.</p><p>Operations Lab is where I explore these connections: a place to share ideas, frameworks, experiments and lessons learned along the way.</p></div>
-  <div><div class="kicker">What I explore</div><ul class="explore-list"><li>OPERATIONS</li><li>RELIABILITY</li><li>SERVICE MANAGEMENT</li><li>INDUSTRY</li><li>CONTINUOUS IMPROVEMENT</li><li>LEADERSHIP</li></ul><a class="cta" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">Let's connect ↗</a></div>
-</div></div></section>
+<section id="industry" class="industry"><div class="container fade">
+  <div class="section-head"><div><div class="kicker">03 — Operations × Industry</div><h2>WHAT CAN INDUSTRY<br>TEACH OPERATIONS?</h2></div>
+  <p class="lead">Industrial systems have spent decades learning how to operate reliably at scale. The technologies differ. The operational questions often do not.</p></div>
+  <div class="industry-line">
+    <div class="industry-line-item"><span>01</span><strong>RELIABILITY</strong><small>Design for predictable performance.</small></div>
+    <div class="industry-line-item"><span>02</span><strong>STANDARD WORK</strong><small>Make good practice repeatable.</small></div>
+    <div class="industry-line-item"><span>03</span><strong>PROBLEM SOLVING</strong><small>Fix causes, not symptoms.</small></div>
+    <div class="industry-line-item"><span>04</span><strong>CONTINUOUS IMPROVEMENT</strong><small>Turn experience into better systems.</small></div>
+  </div>
+  <div class="industry-bottom"><p>Operations and Industry share a fundamental discipline: <strong>make the system better than you found it.</strong></p><a class="read" href="#lab">Explore Operations × Industry →</a></div>
+</div></section>
+<section id="lab" class="lab-section"><div class="container fade">
+  <div class="kicker">04 — Explore the Lab</div><div class="lab-intro"><h2>THREE WAYS<br>INTO THE LAB.</h2><p>Choose a perspective. Follow the question. Explore the thinking behind better Operations.</p></div>
+  <div class="lab-links">
+    <a href="#about" class="lab-link"><span>01</span><div><h3>OPERATIONS</h3><p>How systems are designed to run.</p></div><b>↗</b></a>
+    <a href="#about" class="lab-link"><span>02</span><div><h3>RELIABILITY</h3><p>How systems become resilient.</p></div><b>↗</b></a>
+    <a href="#about" class="lab-link"><span>03</span><div><h3>SERVICE MANAGEMENT</h3><p>How technology creates business value.</p></div><b>↗</b></a>
+  </div>
+</div></section>
+<section id="about" class="about-minimal"><div class="container fade">
+  <div class="kicker">05 — About</div><div class="about-row"><div><h2>VINCENT<br><span>DEFARGE.</span></h2></div>
+  <div><p class="about-lead">Operations · Reliability · Service Management</p><p>Exploring how operational thinking can create more reliable systems, better services and stronger organizations.</p>
+  <div class="about-actions"><a class="cta" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="contact-link" href="mailto:hello@operationslab.fr">Contact ↗</a></div></div></div>
+</div></section>
 </main>
-
 <footer><div class="container"><div class="footer-grid">
   <div><a class="logo" href="#">OPERATIONS <span>LAB</span><small>BY VINCENT DEFARGE</small></a><p class="footer-note">Building better Operations, one lesson at a time.</p></div>
-  <div class="footer-links"><a href="#perspective">Perspective</a><a href="#loop">Operations Loop</a><a href="#industry">Industry</a><a href="#playbook">Playbook</a><a href="#cases">Case Studies</a><a href="#insights">Insights</a><a href="#about">About</a></div>
+  <div class="footer-links"><a href="#idea">Perspective</a><a href="#industry">Operations × Industry</a><a href="#lab">Explore the Lab</a><a href="#about">About</a></div>
   <div><p style="font-weight:900">DESIGNED TO THINK.<br>BUILT TO LEARN.</p><p style="font-size:11px;color:#777">© 2026 Vincent Defarge</p></div>
 </div></div></footer>
-
-<script>
-const els=document.querySelectorAll('.fade');
-const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
-els.forEach(e=>io.observe(e));
-</script>
-
-<script>
-const loopData={
- DESIGN:{n:"01",title:"MAKE IT OPERABLE.",text:"The decisions made here shape everything that follows.",tags:"Architecture · Service Design · Requirements"},
- BUILD:{n:"02",title:"BUILD IT TO RUN.",text:"Reliability is built into the service before it reaches production.",tags:"Automation · Testing · Deployment · Observability"},
- RUN:{n:"03",title:"OPERATE WITH DISCIPLINE.",text:"This is where design meets reality — and signals reveal what really happens.",tags:"Incidents · Observability · SLM · Reliability"},
- LEARN:{n:"04",title:"UNDERSTAND WHAT HAPPENED.",text:"Turn signals and incidents into knowledge before deciding what to change.",tags:"Problems · RCA · Feedback · Learning"},
- IMPROVE:{n:"05",title:"MAKE THE SYSTEM BETTER.",text:"Use operational experience to improve architecture, automation and ways of working.",tags:"Reliability · Automation · Process · Architecture"}
-};
-document.querySelectorAll("#operationsLoop .node").forEach(node=>{
- node.addEventListener("mouseenter",()=>{
-   document.querySelectorAll("#operationsLoop .node").forEach(n=>n.classList.remove("active"));
-   node.classList.add("active");
-   const d=loopData[node.dataset.stage];
-   document.querySelector("#loopDetail").innerHTML=`<div class="detail-kicker">${d.n} / ${node.dataset.stage}</div><h3>${d.title}</h3><p>${d.text}</p><span>${d.tags}</span>`;
- });
-});
-</script>
+<script>const els=document.querySelectorAll('.fade');const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});els.forEach(e=>io.observe(e));</script>
 </body>
-</html>

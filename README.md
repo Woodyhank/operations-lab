@@ -1,12 +1,10 @@
-# Operations Lab — Homepage V1.2
+# Operations Lab — Homepage V1.3
 
-Signature refinement of the Operations × Industry section.
+Editorial homepage refactor with five sections:
+1. The Statement
+2. The Idea
+3. Operations × Industry
+4. Explore the Lab
+5. About Vincent
 
-Changes:
-- stronger editorial statement
-- richer Industrial Operations vs IT Operations comparison
-- shared failure-to-improvement cycle: Detect → Understand → Recover → Learn → Improve
-- stronger personal thesis and visual hierarchy
-- mobile adaptation
-
-V1.1 Hero and Operations Loop remain intact.
+The detailed Playbook, Case Studies, Insights and Operations Loop are intentionally moved off the homepage for later dedicated pages.
