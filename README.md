@@ -1,9 +1,21 @@
-# Operations Lab — V1.4
+# Operations Lab — V1.5
 
-Definitive fix for the mobile hero image.
+Refinement of the mobile-first editorial direction.
 
-The previous image file was not a pure photo: it was a composite containing the industrial photo AND the two Reliable/Resilient cards. Displaying it as a normal image therefore always showed the cards.
+## Main changes
+- Stronger editorial hierarchy.
+- Less information density on the first screen.
+- Clear separation between Statement / Idea / Industry / Explore / About.
+- More breathing room between sections.
+- Operations × Industry becomes a central signature.
+- Hero image uses a stable `object-fit: cover` container to avoid the previous crop/layout issue.
 
-V1.4 creates a clean photo-only asset (`industrial-hero-photo.jpg`) from the photographic region and uses that asset in the hero.
+## Image
+Put the existing hero image in:
 
-No `background-size: cover` and no fixed mobile image height are used.
+`assets/operations-hero.jpg`
+
+The filename is intentionally isolated so the image can be swapped without touching the layout code.
+
+## Deploy
+Upload/replace `index.html`, `styles.css`, `script.js` and the `assets` folder in the GitHub repository. Vercel will redeploy automatically.
