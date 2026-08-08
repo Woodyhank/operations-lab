@@ -1,9 +1,12 @@
-# Operations Lab — V1.3.2
+# Operations Lab — V1.3.3
 
-Mobile Hero correction.
+Definitive Hero image correction.
 
-- Original V1 editorial direction preserved.
-- Hero statement appears before the image on mobile.
-- Industrial image is a controlled 300px mobile band.
-- Image uses a fixed crop (`center 42%`) to keep the architecture and silhouette visible.
-- No other content direction changes.
+The previous implementation used a CSS background with `cover`, which cropped the supplied hero asset because the asset itself is portrait/composite.
+
+This version:
+- uses the hero asset as a real `<img>`;
+- preserves the original aspect ratio;
+- removes `background-size: cover`;
+- prevents the image from being cropped on mobile;
+- keeps the previously approved editorial DA and content.
