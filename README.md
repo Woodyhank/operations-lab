@@ -1,15 +1,12 @@
-# Operations Lab — v1.6
+# Operations Lab — V1.7
 
-## Structure
-- `index.html` — homepage
-- `essays/industry-can-teach-it.html` — Essay #01
-- `css/home.css` — homepage styles
-- `css/article.css` — article styles
-- `images/industrial-hero-home.jpg` — homepage industrial hero
-- `images/industrial-hero-article.jpg` — article industrial hero
+Premium editorial homepage + separate Essay #01.
 
-## Deploy
-Upload the whole folder to your Git repository. The homepage stays at `/index.html` and the article at `/essays/industry-can-teach-it.html`.
+- `index.html` — V1.7 homepage
+- `essays/industry-can-teach-it.html` — article
+- `css/home.css` — homepage
+- `css/article.css` — article
+- `images/industrial-hero-home.jpg` — homepage image
+- `images/industrial-hero-article.jpg` — article image
 
-The article links back to the homepage, and the LinkedIn CTA points to:
-https://www.linkedin.com/in/vincent-defarge-165a844b/
+Deploy the entire folder to Git/Vercel. Keep `index.html` at repository root.
