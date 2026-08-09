@@ -1,21 +1,13 @@
-# Operations Lab — V1.5
+# Operations Lab V1.5 + Essay #01
 
-Refinement of the mobile-first editorial direction.
+This package connects the V1.5 homepage to Essay #01.
 
-## Main changes
-- Stronger editorial hierarchy.
-- Less information density on the first screen.
-- Clear separation between Statement / Idea / Industry / Explore / About.
-- More breathing room between sections.
-- Operations × Industry becomes a central signature.
-- Hero image uses a stable `object-fit: cover` container to avoid the previous crop/layout issue.
+## Files
+- `index.html` — V1.5 homepage with the new Essay #01 feature/link
+- `essay-01.html` — article page
+- `styles.css` — homepage styles
+- `essay-01.css` — article styles
+- `script.js` — homepage script
 
-## Image
-Put the existing hero image in:
-
-`assets/operations-hero.jpg`
-
-The filename is intentionally isolated so the image can be swapped without touching the layout code.
-
-## Deploy
-Upload/replace `index.html`, `styles.css`, `script.js` and the `assets` folder in the GitHub repository. Vercel will redeploy automatically.
+## Deployment
+Upload all files together. The homepage link points to `essay-01.html`.
