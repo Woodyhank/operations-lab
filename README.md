@@ -1,13 +1,14 @@
-# Operations Lab — V1.8
+# Operations Lab — V1.9
 
-Final refinement pass of the premium homepage.
+V1.9 adds the About page.
 
-Structure:
-- `index.html` — homepage V1.8
+- `index.html` — homepage
+- `about/index.html` — About / Vincent Defarge
 - `essays/industry-can-teach-it.html` — Essay #01
-- `css/home.css` — homepage styling
-- `css/article.css` — article styling
+- `css/home.css` — homepage
+- `css/about.css` — About
+- `css/article.css` — Essay
 - `images/industrial-hero-home.jpg` — homepage image
 - `images/industrial-hero-article.jpg` — article image
 
-Deploy the entire folder to Git/Vercel. Keep `index.html` at repository root.
+The homepage now has a compact ABOUT / ESSAYS navigation and the About section links to the new page.
