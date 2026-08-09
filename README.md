@@ -1,10 +1,13 @@
-# Operations Lab — V2.1
+# Operations Lab — V2.2
 
-Navigation correction pass.
+Navigation final correction.
 
-- Full top navigation on Home, About, Essays and Podcasts.
-- Consistent ABOUT / ESSAYS / PODCASTS links on every page.
-- Mobile/iPhone navigation is now visible as a compact horizontal second row instead of being hidden.
-- Active page is highlighted.
-- Desktop layout remains unchanged.
-- Home → Podcasts works directly on mobile.
+What was fixed:
+- Article page now has a properly spaced ABOUT / ESSAYS / PODCASTS navigation.
+- About page now has the same full navigation.
+- Podcasts page keeps the same navigation with PODCASTS active.
+- Home uses the same navigation system.
+- Mobile/iPhone shows the navigation as a visible second row with horizontal scrolling when needed.
+- Desktop navigation is centered and evenly spaced.
+- Active page is highlighted in red.
+- No hamburger is required to reach Podcasts from Home on iPhone.
