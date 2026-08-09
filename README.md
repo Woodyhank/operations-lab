@@ -1,13 +1,19 @@
-# Operations Lab — V2.2
+# Operations Lab — V2.3 Complete
 
-Navigation final correction.
+Complete site package with the premium About page redesign.
 
-What was fixed:
-- Article page now has a properly spaced ABOUT / ESSAYS / PODCASTS navigation.
-- About page now has the same full navigation.
-- Podcasts page keeps the same navigation with PODCASTS active.
-- Home uses the same navigation system.
-- Mobile/iPhone shows the navigation as a visible second row with horizontal scrolling when needed.
-- Desktop navigation is centered and evenly spaced.
-- Active page is highlighted in red.
-- No hamburger is required to reach Podcasts from Home on iPhone.
+Pages:
+- `index.html` — Home
+- `about/index.html` — About / Vincent Defarge
+- `essays/industry-can-teach-it.html` — Essay #01
+- `podcasts/index.html` — Podcasts
+
+The About page now features:
+- oversized Vincent Defarge hero
+- premium quote panel
+- Current Role block: Head of Service Management Office
+- Michelin / IT Operations & Services Management descriptor
+- four principles
+- existing editorial sections and responsive navigation
+
+Deploy the entire folder to Vercel/Git.
