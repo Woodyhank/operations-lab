@@ -1,11 +1,12 @@
-# Operations Lab — V1.7
+# Operations Lab — V1.8
 
-Premium editorial homepage + separate Essay #01.
+Final refinement pass of the premium homepage.
 
-- `index.html` — V1.7 homepage
-- `essays/industry-can-teach-it.html` — article
-- `css/home.css` — homepage
-- `css/article.css` — article
+Structure:
+- `index.html` — homepage V1.8
+- `essays/industry-can-teach-it.html` — Essay #01
+- `css/home.css` — homepage styling
+- `css/article.css` — article styling
 - `images/industrial-hero-home.jpg` — homepage image
 - `images/industrial-hero-article.jpg` — article image
 
