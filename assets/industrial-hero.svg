@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#d9d9d6"/>
+<rect x="0" y="0" width="700" height="900" fill="#202020"/>
+<polygon points="700,0 1080,0 850,900 500,900" fill="#555"/>
+<rect x="1080" y="0" width="520" height="900" fill="#eee"/>
+<g stroke="#333" stroke-width="12" fill="none"><path d="M900 620H1550M980 540H1550M1060 460H1550"/><path d="M1050 420L1550 420"/></g>
+<circle cx="1320" cy="360" r="28" fill="#111"/><path d="M1320 390V510M1320 430L1280 480M1320 430L1360 480" stroke="#111" stroke-width="18"/>
+</svg>
