@@ -1,98 +1,81 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Operations Lab — a personal laboratory exploring Operations, Reliability and Service Management.">
-  <title>Operations Lab — Vincent Defarge</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What Industry Can Teach IT Operations — Operations Lab</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Operations Lab home">
-      <span>OPERATIONS <b>LAB</b></span>
-      <small>BY VINCENT DEFARGE</small>
-    </a>
-    <a class="connect" href="mailto:contact@operationslab.fr">LET'S CONNECT ↗</a>
-  </header>
+<header class="header">
+<a class="brand" href="https://operationslab.fr/">OPERATIONS<span>LAB</span><small>BY VINCENT DEFARGE</small></a>
+<a class="connect" href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank">LET'S CONNECT ↗</a>
+</header>
+<div class="layout">
+<aside class="side">
+<a href="https://operationslab.fr/">← BACK TO HOME</a>
+<div class="label">ESSAYS</div>
+<nav>
+<a class="active" href="#top"><b>01</b> What Industry Can Teach IT Operations</a>
+<a href="#"><b>02</b> Designing Operations Before Production</a>
+<a href="#"><b>03</b> Why Incidents Are Symptoms, Not Problems</a>
+<a href="#"><b>04</b> Observability Is Not Monitoring</a>
+<a href="#"><b>05</b> Standardization Doesn't Kill Agility</a>
+</nav>
+<div class="sidequote">“<br>The goal is not simply to restore service. The goal is to make the system more reliable tomorrow than it is today.</div>
+</aside>
 
-  <main id="top">
-    <section class="hero section">
-      <div class="eyebrow">01 — THE STATEMENT</div>
-      <h1>OPERATIONS<br>ARE NOT WHAT<br>HAPPENS AFTER<br><em>PRODUCTION.</em></h1>
-      <p class="lead">Operations start before production.</p>
-      <p class="intro">A personal laboratory exploring Operations, Reliability and Service Management — and what industrial thinking can teach us about better operations.</p>
-      <a class="primary" href="#idea">EXPLORE THE LAB →</a>
+<main id="top">
+<section class="hero">
+<div class="hero-copy">
+<div class="red">01 — ESSAY</div>
+<h1>WHAT INDUSTRY<br>CAN TEACH<br>IT OPERATIONS</h1>
+<p class="dek">Why industrial thinking can make digital operations more reliable.</p>
+<div class="meta">8 MIN READ · OPERATIONS LAB</div>
+</div>
+<figure class="hero-img"><img src="assets/industrial-hero.jpg" alt="Industrial environment"></figure>
+</section>
 
-      <div class="signature">
-        <strong>Vincent Defarge</strong>
-        <span>Operations · Reliability · Service Management</span>
-      </div>
+<section class="section">
+<div class="red">01 — THE OBSERVATION</div>
+<h2>IT AND INDUSTRY<br>DON'T SPEAK THE<br>SAME LANGUAGE.</h2>
+<p class="lead">Yet they face remarkably similar operational problems.</p>
+<p>In a factory, a small deviation can become a production stop. In IT, a small signal can become a service outage. The technology is different. The operational challenge is not.</p>
+<p>Both environments depend on systems that must behave predictably, recover quickly and improve continuously.</p>
+</section>
 
-      <figure class="hero-image">
-        <img src="assets/operations-hero.jpg" alt="Industrial architecture and a person walking through a concrete structure">
-      </figure>
+<section class="statement">THE TECHNOLOGY IS DIFFERENT.<br><span>THE OPERATIONAL CHALLENGES ARE NOT.</span></section>
 
-      <div class="principles">
-        <article><span>01</span><strong>RELIABLE</strong><p>Services you can trust.</p></article>
-        <article><span>02</span><strong>RESILIENT</strong><p>Services that recover.</p></article>
-      </div>
-    </section>
+<section class="section">
+<div class="red">02 — THE PARALLEL</div>
+<h2>FOUR INDUSTRIAL<br>PRINCIPLES THAT<br>TRAVEL WELL.</h2>
+<div class="grid">
+<div><b>01</b><h3>RELIABILITY</h3><p>Design the system so predictable behaviour is the default.</p></div>
+<div><b>02</b><h3>STANDARDIZATION</h3><p>Make the good way of working easier to repeat.</p></div>
+<div><b>03</b><h3>PROBLEM SOLVING</h3><p>Go beyond the incident. Find the conditions that allowed it.</p></div>
+<div><b>04</b><h3>CONTINUOUS IMPROVEMENT</h3><p>Every failure and recovery should make the system stronger.</p></div>
+</div>
+</section>
 
-    <section id="idea" class="section idea">
-      <div class="eyebrow">02 — THE IDEA</div>
-      <h2>GOOD<br>OPERATIONS ARE<br><em>DESIGNED,</em><br>NOT SIMPLY<br>MANAGED.</h2>
-      <p class="statement">Reliability is not an outcome of operations. It is built into the way we design, operate and improve them.</p>
-      <div class="section-index">02 / OPERATIONS · RELIABILITY · IMPROVEMENT</div>
-    </section>
+<section class="split">
+<div class="red">03 — THE LESSON</div>
+<div><h2>OPERATIONS ARE<br>DESIGNED.</h2>
+<p>Industrial organizations rarely leave operational performance entirely to the people running the line. They design standards, feedback loops, escalation paths and recovery mechanisms before production starts.</p>
+<p>IT Operations can apply the same logic: reduce ambiguity before incidents happen, make signals actionable and build recovery into the service.</p></div>
+</section>
 
-    <section class="section industry">
-      <div class="eyebrow">03 — OPERATIONS × INDUSTRY</div>
-      <h2>WHAT CAN<br>INDUSTRY<br>TEACH<br>OPERATIONS?</h2>
-      <p class="statement">Industrial systems have spent decades learning how to operate reliably at scale. The technologies differ. The operational questions often do not.</p>
+<section class="quote"><div>“</div><blockquote>Good operations are not simply managed. They are designed.</blockquote><small>— OPERATIONS LAB</small></section>
 
-      <div class="lessons">
-        <div><b>01</b><span>RELIABILITY</span><p>Design for predictable performance.</p></div>
-        <div><b>02</b><span>STANDARD</span><p>Make good practice repeatable.</p></div>
-        <div><b>03</b><span>PROBLEM SOLVING</span><p>Fix causes, not symptoms.</p></div>
-        <div><b>04</b><span>CONTINUOUS IMPROVEMENT</span><p>Improve systems, not isolated events.</p></div>
-      </div>
-    </section>
+<section class="section">
+<div class="red">04 — THE TAKEAWAY</div>
+<h2>BUILD SYSTEMS<br>THAT GET BETTER<br>AT RUNNING.</h2>
+<p class="lead">The strongest operations teams don't just keep services alive. They continuously improve the conditions that make reliable service possible.</p>
+<p>That is where the industrial mindset becomes useful: not as a model to copy literally, but as a way of thinking about flow, standards, signals, failure and learning.</p>
+</section>
 
-    <section class="section explore">
-      <div class="eyebrow">04 — EXPLORE THE LAB</div>
-      <h2>THREE WAYS<br>INTO THE LAB.</h2>
-      <p class="statement">Choose a perspective. Follow the question. Explore the thinking behind better operations.</p>
-
-      <a class="essay-feature" href="essay-01.html">
-        <span class="essay-feature-label">01 — ESSAY</span>
-        <strong>WHAT INDUSTRY<br>CAN TEACH IT OPERATIONS.</strong>
-        <small>Why industrial thinking can make digital operations more reliable. <b>READ ESSAY →</b></small>
-      </a>
-
-      <ol>
-        <li><b>01</b><span>OPERATIONS</span><small>How systems are designed to run.</small></li>
-        <li><b>02</b><span>RELIABILITY</span><small>How systems become resilient.</small></li>
-        <li><b>03</b><span>SERVICE MANAGEMENT</span><small>How technology creates business value.</small></li>
-      </ol>
-    </section>
-
-    <section class="section about">
-      <div class="eyebrow">05 — ABOUT</div>
-      <h2>VINCENT<br><em>DEFARGE.</em></h2>
-      <p class="role">Operations · Reliability · Service Management</p>
-      <p class="statement">Exploring how operational thinking can create more reliable systems, better services and stronger organizations.</p>
-      <a class="primary" href="mailto:contact@operationslab.fr">LINKEDIN ↗</a>
-      <a class="text-link" href="mailto:contact@operationslab.fr">Contact ↗</a>
-    </section>
-  </main>
-
-  <footer>
-    <strong>OPERATIONS<br><em>LAB</em></strong>
-    <span>OPERATIONS · RELIABILITY · SERVICE MANAGEMENT</span>
-    <span>© <span id="year"></span> Vincent Defarge</span>
-  </footer>
-
-  <script src="script.js"></script>
+<section class="next"><div><div class="red">NEXT ESSAY</div><h2>DESIGNING OPERATIONS<br>BEFORE PRODUCTION.</h2></div><a href="#">READ NEXT →</a></section>
+</main>
+</div>
+<footer><b>OPERATIONS<span>LAB</span></b><span>OPERATIONS · RELIABILITY · SERVICE MANAGEMENT</span><a href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank">LINKEDIN ↗</a></footer>
 </body>
 </html>
