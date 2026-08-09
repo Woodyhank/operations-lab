@@ -1,14 +1,16 @@
-# Operations Lab — V1.9
+# Operations Lab — V2.0
 
-V1.9 adds the About page.
+Adds the Podcasts / Media page.
 
 - `index.html` — homepage
-- `about/index.html` — About / Vincent Defarge
+- `about/index.html` — About
 - `essays/industry-can-teach-it.html` — Essay #01
-- `css/home.css` — homepage
-- `css/about.css` — About
-- `css/article.css` — Essay
-- `images/industrial-hero-home.jpg` — homepage image
-- `images/industrial-hero-article.jpg` — article image
+- `podcasts/index.html` — Podcasts
+- `css/home.css`
+- `css/about.css`
+- `css/article.css`
+- `css/podcast.css`
+- `images/industrial-hero-home.jpg`
+- `images/industrial-hero-article.jpg`
 
-The homepage now has a compact ABOUT / ESSAYS navigation and the About section links to the new page.
+The Podcasts page intentionally uses clearly labelled "Coming Soon" entries until real episode links/titles are supplied. No fictional podcast episodes are presented as real.
