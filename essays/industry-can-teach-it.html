@@ -1,16 +1,210 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>What Industry Can Teach IT Operations — Operations Lab</title><meta name="description" content="Why industrial thinking can make digital operations more reliable, resilient and continuously improving."><meta property="og:title" content="What Industry Can Teach IT Operations"><meta property="og:description" content="Reliability is designed long before something breaks."><meta property="og:type" content="article"><meta property="og:image" content="../images/industrial-hero-article.jpg"><link rel="stylesheet" href="../css/article.css"></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>What Industry Can Teach IT Operations — Operations Lab</title>
+  <meta name="description" content="Reliability begins before production — and with the people closest to the work. An essay by Vincent Defarge.">
+  <meta property="og:title" content="What Industry Can Teach IT Operations">
+  <meta property="og:description" content="Reliability begins before production — and with the people closest to the work.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="../images/industrial-hero-article.jpg">
+  <meta name="author" content="Vincent Defarge">
+  <meta name="theme-color" content="#f7f7f5">
+  <link rel="stylesheet" href="../css/article.css">
+</head>
 <body>
-<header class="header"><a class="logo" href="../index.html" aria-label="Operations Lab home">OPERATIONS<span>LAB</span><small>BY VINCENT DEFARGE</small></a><nav class="nav" aria-label="Main navigation"><a href="../about/index.html">ABOUT</a><a class="active" href="index.html">ESSAYS</a><a href="../podcasts/index.html">PODCASTS</a></nav><a class="connect" href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank" rel="noopener">LET'S CONNECT ↗</a></header>
+<header class="header">
+  <a class="logo" href="../index.html" aria-label="Operations Lab home">OPERATIONS<span>LAB</span><small>BY VINCENT DEFARGE</small></a>
+  <nav class="nav" aria-label="Main navigation"><a href="../about/index.html">ABOUT</a><a class="active" href="index.html">ESSAYS</a><a href="../podcasts/index.html">PODCASTS</a></nav>
+  <a class="connect" href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank" rel="noopener">LET'S CONNECT ↗</a>
+</header>
+
 <div class="layout">
-<aside class="side"><a class="back" href="index.html">← ALL ESSAYS</a><div class="label">ESSAYS</div><nav><a href="industry-can-teach-it.html">01&nbsp;&nbsp; What Industry Can Teach IT Operations</a><span>02&nbsp;&nbsp; Designing Operations Before Production · NEXT</span><span>03&nbsp;&nbsp; Why Incidents Are Symptoms, Not Problems</span><span>04&nbsp;&nbsp; Observability Is Not Monitoring</span><span>05&nbsp;&nbsp; Standardization Doesn't Kill Agility</span></nav><div class="sidequote">“<br>The goal is not simply to restore service. The goal is to make the system more reliable tomorrow than it is today.</div></aside>
-<main>
-<section class="hero"><div class="hero-copy"><div class="kicker">01 — ESSAY</div><h1>WHAT INDUSTRY CAN TEACH IT OPERATIONS</h1><div class="dek">Why industrial thinking can make digital operations more reliable.</div><div class="meta">8 MIN READ · OPERATIONS LAB</div></div><div class="hero-img"><img src="../images/industrial-hero-article.jpg" alt="Industrial operations environment"></div></section>
-<section class="content"><div class="kicker">01 — THE OBSERVATION</div><h2>INDUSTRIAL OPERATIONS DON'T START WHEN SOMETHING BREAKS.</h2><p class="lead">In a factory, reliability is designed long before a machine stops.</p><p>The same principle applies to digital operations. Yet IT organizations often organize their operating model around the moment something goes wrong: the incident, the alert, the escalation, the recovery.</p><p>That is necessary — but it is not enough.</p></section>
-<section class="statement">THE BEST OPERATIONS ARE DESIGNED TO MAKE FAILURE <span>LESS LIKELY.</span></section>
-<section class="content"><div class="kicker">02 — WHAT INDUSTRY DOES DIFFERENTLY</div><h2>DESIGN FOR THE <span style="color:var(--red)">SYSTEM.</span></h2><p>Industrial environments make dependencies, constraints and failure modes visible. They create standards, visual controls, escalation mechanisms and feedback loops before production starts.</p><div class="grid"><div><div class="kicker">01</div><h3>RELIABILITY</h3><p>Build predictable behavior into the service.</p></div><div><div class="kicker">02</div><h3>RESILIENCE</h3><p>Design the organization to detect, respond and recover.</p></div><div><div class="kicker">03</div><h3>STANDARDIZATION</h3><p>Make the right behavior repeatable.</p></div><div><div class="kicker">04</div><h3>LEARNING</h3><p>Turn operational events into system improvements.</p></div></div></section>
-<section class="quote"><div class="mark">“</div><blockquote>The goal is not simply to restore service. The goal is to make the system more reliable tomorrow than it is today.</blockquote><small>OPERATIONS LAB · ESSAY 01</small></section>
-<section class="next"><div><div class="kicker">NEXT IN THE LAB</div><h2>DESIGNING OPERATIONS<br>BEFORE PRODUCTION.</h2><p>Coming next — from architectural decisions to operational readiness.</p></div><a href="index.html">VIEW ALL ESSAYS →</a></section>
-</main></div>
+  <aside class="side">
+    <a class="back" href="index.html">← ALL ESSAYS</a>
+    <div class="label">IN THIS ESSAY</div>
+    <nav aria-label="Article sections">
+      <a href="#seeing">01&nbsp;&nbsp; Seeing the system</a>
+      <a href="#lean">02&nbsp;&nbsp; A management system</a>
+      <a href="#win">03&nbsp;&nbsp; WIN for IT</a>
+      <a href="#impact">04&nbsp;&nbsp; Business impact</a>
+      <a href="#learning">05&nbsp;&nbsp; Learning system</a>
+      <a href="#leadership">06&nbsp;&nbsp; Leadership</a>
+    </nav>
+    <div class="sidequote">“<br>Escalate the obstacle,<br>not the ownership.</div>
+  </aside>
+
+  <main>
+    <article>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="kicker">01 — ESSAY</div>
+          <h1>WHAT INDUSTRY CAN TEACH IT OPERATIONS</h1>
+          <div class="dek">Reliability begins before production — and with the people closest to the work.</div>
+          <div class="meta">12 MIN READ · VINCENT DEFARGE · OPERATIONS LAB</div>
+        </div>
+        <div class="hero-img"><img src="../images/industrial-hero-article.jpg" alt="Industrial operations environment"></div>
+      </section>
+
+      <section class="content opening">
+        <div class="kicker">THE PREMISE</div>
+        <p class="lead">In a factory, no one would claim that operations begin only when a machine stops.</p>
+        <p>Reliability is prepared long before that moment. The production system is designed, standards are established, abnormal conditions are made visible and teams are equipped to react before a small deviation becomes a larger failure.</p>
+        <p>Yet in IT, Operations are still often positioned at the end of the lifecycle: Architecture designs, Engineering builds, and then the service enters production. From that point onward, Operations are expected to monitor, support and restore it.</p>
+        <p class="emphasis">This model asks Operations to manage consequences they had too little opportunity to prevent.</p>
+        <p>Reliable digital services require operational knowledge much earlier. Before monitoring can be meaningful, someone must define normal behaviour. Before an alert can help, teams must understand which deviation matters. Before recovery can be prepared, failure modes, dependencies and decision paths must be explicit.</p>
+        <p>This does not mean Operations should own Architecture or Engineering. It means these disciplines must design the service together, with operational reality represented from the beginning.</p>
+        <p>Industry cannot provide a model for IT to copy literally. A physical production line and a distributed digital service behave differently. But industry can teach us something fundamental about the conditions required for reliable work.</p>
+      </section>
+
+      <section class="statement">GOOD OPERATIONS ARE NOT SIMPLY MANAGED.<br><span>THEY ARE DESIGNED.</span></section>
+
+      <section class="content" id="seeing">
+        <div class="kicker">01 — SEEING THE SYSTEM</div>
+        <h2>RELIABILITY STARTS WITH <span>VISIBILITY.</span></h2>
+        <p>During visits to manufacturing environments, I was struck by the effort devoted to making the production process understandable while it is running.</p>
+        <p>Cameras provide visibility at different stages of the line. Weight, dimensions and other characteristics are measured continuously. Controls are distributed throughout the process rather than concentrated only at the end.</p>
+        <p>The objective is not to collect as much data as possible. It is to recognise a meaningful deviation early enough to protect what comes next.</p>
+        <p>Monitoring often tells us whether a known technical condition has occurred: a server is unavailable, a threshold has been exceeded, a transaction has failed or an application is responding too slowly. These signals are necessary, but they do not describe the whole service.</p>
+        <p>A service can remain technically available while already deteriorating for its users. A workaround may consume hours of operational effort. A dependency may become increasingly unstable. Repeated friction may affect a business process without ever generating a major incident.</p>
+        <p>Technical telemetry alone may not reveal these conditions. Some are first detected by the people operating the service or by the users experiencing it.</p>
+        <div class="perspectives" aria-label="Three perspectives of observability">
+          <div><b>01</b><h3>TECHNICAL</h3><p>How the system behaves.</p></div>
+          <div><b>02</b><h3>BUSINESS</h3><p>What the user experiences.</p></div>
+          <div><b>03</b><h3>OPERATIONAL</h3><p>What teams encounter while keeping it working.</p></div>
+        </div>
+        <blockquote class="pullquote">Observability is not about watching everything. It is about detecting meaningful deviation early enough to act.</blockquote>
+        <p>A signal creates value only when the organisation understands what normal and abnormal mean, knows who should respond and has the capacity to act. In that sense, observability is not only a property of the technology. It is also a property of the operating model.</p>
+      </section>
+
+      <section class="dark-section" id="lean">
+        <div class="content content-dark">
+          <div class="kicker">02 — FROM LEAN TO LEADERSHIP</div>
+          <h2>A TOOL IS NOT A <span>MANAGEMENT SYSTEM.</span></h2>
+          <p>My understanding of the relationship between operations, people and management was strongly influenced by Jean-Christophe Guérin, a former senior manufacturing leader at Michelin.</p>
+          <p>I met Jean-Christophe through a mentoring programme. My current manager had known him much earlier in her career: he had been her first manager at Michelin and had worked on the start-up of new factories. Through that connection, I attended his conference on operational excellence and the inversion of the managerial pyramid.</p>
+          <p>I expected to learn mainly about industrial methods. What stayed with me was a conception of leadership.</p>
+          <p>The people closest to the work usually encounter its weak signals first. They see the recurring friction, the imperfect standard, the workaround and the small deviation before these appear in a management indicator.</p>
+          <p>The manager's role is not to replace that knowledge. It is to create an environment in which it can surface, help remove obstacles that teams cannot remove alone and progressively increase their ability to act.</p>
+          <p>This is the practical meaning of the inverted pyramid: management supports the people who create and operate value.</p>
+          <p>Jean-Christophe presented a problem-escalation mechanism known as the WIN system. Employees could make difficulties visible through WIN cards: red when help was required, green when information needed to be shared.</p>
+          <p>The card was only the signal. The management commitment behind it was the real system: a problem raised from the field could not simply be ignored.</p>
+          <p>Lean is easily reduced to its visible tools — standards, boards, indicators, cards and routines. Those mechanisms work only when people feel safe to reveal abnormalities and when the organisation responds constructively.</p>
+          <blockquote class="pullquote light">Without a response, visual management becomes visual inventory: a growing display of known problems that everyone has learned to tolerate.</blockquote>
+        </div>
+      </section>
+
+      <section class="content" id="win">
+        <div class="kicker">03 — A CHAIN OF HELP</div>
+        <h2>WHAT WOULD WIN MEAN <span>FOR IT?</span></h2>
+        <p>We have begun experimenting with the WIN approach in an IT context at Michelin. At this stage, its purpose is straightforward: make visible the operational problems that the people encountering them cannot resolve alone.</p>
+        <p>The experiment led me to a broader hypothesis of my own.</p>
+        <p class="lead">Could the principle of a chain of help operate not only between teams and managers, but also between Operations, Engineering and Architecture throughout the life of a digital service?</p>
+        <p>This is an extension of the original management idea, not a claim that the industrial mechanism can be transferred unchanged.</p>
+        <p>An Operations support team should be able to diagnose and resolve as many situations as reasonably possible. Autonomy, however, does not mean isolation or unlimited responsibility. Some problems require access, engineering capability or product knowledge that the team does not possess. Others reveal a structural design decision that no operational procedure can compensate for sustainably.</p>
+        <p>In those situations, the team should not have to choose between accepting the problem and transferring ownership of it.</p>
+
+        <div class="loop" aria-label="Digital chain of help">
+          <div><b>01</b><h3>OPERATIONS</h3><p>Detect and frame the problem. Resolve locally when knowledge, authority and tools allow it.</p></div>
+          <div><b>02</b><h3>ENGINEERING</h3><p>Remove the technical constraint while Operations provides evidence and validates the result.</p></div>
+          <div><b>03</b><h3>ARCHITECTURE</h3><p>Address structural causes in boundaries, dependencies, resilience choices or quality attributes.</p></div>
+          <div><b>04</b><h3>RETURN</h3><p>Translate the solution into better tooling, automation, standards, documentation or decision rights.</p></div>
+        </div>
+
+        <p>The fourth step is what turns support into learning. Without it, the same dependency on Engineering or Architecture will remain the next time the problem occurs.</p>
+        <p>If a WIN simply means “I cannot fix this, so I transfer it”, it becomes another L1-L2-L3 escalation process. Ownership moves from queue to queue, response times increase and the boundaries between teams become stronger.</p>
+        <blockquote class="principle">ESCALATE THE OBSTACLE.<br><span>NOT THE OWNERSHIP.</span></blockquote>
+        <p>The team receiving the WIN joins the problem-solving process with a capability the originating team does not have. The team that raised it retains the context, participates in validation and receives the resulting knowledge.</p>
+        <p>Success should not be measured by the number of WINs created or closed. The more important question is whether the organisation becomes more capable over time.</p>
+        <ul class="questions">
+          <li>Are recurring obstacles permanently removed?</li>
+          <li>Do teams recover effort previously lost to workarounds?</li>
+          <li>Can Operations resolve more situations safely without escalation?</li>
+          <li>Do operational signals influence engineering priorities and architectural decisions?</li>
+          <li>Does each response reduce the probability or impact of recurrence?</li>
+        </ul>
+        <p class="emphasis">The objective is not to create a better escalation mechanism. It is to make each request for help improve the operating system.</p>
+      </section>
+
+      <section class="content divided">
+        <div class="kicker">04 — SIGNAL QUALITY</div>
+        <h2>NOT EVERY IMPORTANT TOPIC <span>IS A WIN.</span></h2>
+        <p>Introducing a mechanism is easier than changing the behaviour around it. People do not always feel comfortable raising problems to management. Reporting a difficulty may be interpreted as complaining, admitting weakness or criticising another team's work.</p>
+        <p>Another distortion can appear once the mechanism gains management attention. WINs may gradually become a list of strategic topics rather than concrete obstacles encountered where the work happens.</p>
+        <div class="comparison">
+          <div class="not-win"><small>NOT A WIN</small><strong>“We need to improve the CMDB.”</strong><p>A broad ambition without a field problem or actionable request.</p></div>
+          <div class="good-win"><small>A USEFUL WIN</small><strong>“The support team spends three hours every week correcting this information manually.”</strong><p>The cause is known, but removing it requires a product change the team cannot implement.</p></div>
+        </div>
+        <p>A meaningful WIN should identify the observed problem, its impact, what has already been attempted and the precise capability, authority or decision required from elsewhere.</p>
+        <p>This should not become a bureaucratic form. The receiving side also needs an explicit commitment. A WIN may not guarantee an immediate solution, but it should guarantee acknowledgement, clarification, a decision and feedback.</p>
+        <p>Trust develops through consistency: acknowledge the signal, understand it at the source, decide what happens next and close the feedback loop.</p>
+      </section>
+
+      <section class="content" id="impact">
+        <div class="kicker">05 — BUSINESS IMPACT</div>
+        <h2>MAKE SILENT DEGRADATION <span>VISIBLE.</span></h2>
+        <p>Not every important operational problem causes a total outage. Some create delays, manual work, reduced performance or recurring disruption over several days. A service may continue to meet a technical availability target while the business quietly absorbs the cost of its degradation.</p>
+        <p>We introduced a declarative impact score, with points added for each day a business impact continued. The score was not intended to evaluate teams or create a precise financial calculation. Its purpose was to make persistent degradation visible enough to support prioritisation.</p>
+        <p>This created a common signal for a difficult conversation: should the organisation continue adding change, or temporarily redirect capacity towards reliability and resilience?</p>
+        <p>That decision should never be automated by a score. Declarative measures are subjective. A number can create false precision, hide important context or be inflated to gain priority.</p>
+        <blockquote class="pullquote">The score must remain the beginning of a conversation, not the end of one.</blockquote>
+        <p>When degradation remains invisible, project delivery appears to be the only activity creating value. Once its cumulative impact can be seen, reliability work can be discussed as an investment in business performance rather than a technical interruption to the roadmap.</p>
+      </section>
+
+      <section class="learning-section" id="learning">
+        <div class="content">
+          <div class="kicker">06 — THE MODEL</div>
+          <h2>TOWARDS AN OPERATIONAL <span>LEARNING SYSTEM.</span></h2>
+          <p>IT organisations already generate enormous volumes of information: alerts, incidents, problem records, tickets, post-mortems, user feedback, technical debt and operational workarounds.</p>
+          <p>The challenge is rarely the complete absence of signals. It is the fragmentation between them.</p>
+          <p>Technical alerts live in monitoring tools. Business impact is discussed elsewhere. Operational irritants remain in team conversations. Structural weaknesses enter engineering backlogs. Architectural decisions are documented in another place again.</p>
+          <p>Each fragment may be visible, while the system connecting them remains invisible.</p>
+
+          <ol class="learning-steps">
+            <li><span>01</span><div><h3>SENSE</h3><p>Detect technical, business and operational deviations as early as possible.</p></div></li>
+            <li><span>02</span><div><h3>QUALIFY</h3><p>Understand the problem at its source, its impact and what has already been attempted.</p></div></li>
+            <li><span>03</span><div><h3>RESPOND</h3><p>Resolve locally or activate the appropriate chain of help without transferring ownership.</p></div></li>
+            <li><span>04</span><div><h3>REMOVE</h3><p>Address the technical, organisational or architectural obstacle rather than only its symptom.</p></div></li>
+            <li><span>05</span><div><h3>LEARN</h3><p>Return knowledge and capability to the field, then verify whether recurrence and effort decrease.</p></div></li>
+          </ol>
+
+          <p>Technical observability supports the first movement. WINs can connect the second and third. Engineering and architectural action enable the fourth. Leadership must protect the fifth, because learning requires time, feedback and decisions that may compete with delivery.</p>
+          <p>This model remains a hypothesis to be tested and refined, not a finished framework. But it offers a way to connect practices that are too often managed separately.</p>
+          <p class="emphasis">This is not manufacturing copied into IT. It is industrial discipline translated into a digital operating environment.</p>
+        </div>
+      </section>
+
+      <section class="content" id="leadership">
+        <div class="kicker">07 — THE LEADERSHIP LESSON</div>
+        <h2>KNOWLEDGE IS <span>DISTRIBUTED.</span></h2>
+        <p>Jean-Christophe Guérin's influence on me extends beyond operational methods. It has shaped the way I think about my own role as a leader.</p>
+        <p>The complexity of modern services makes it impossible for one manager to hold all the relevant knowledge. The people closest to Operations often encounter reality first. They see weak signals, recurring workarounds and the distance between a process as designed and a service as actually operated.</p>
+        <p>Leadership does not lose value when it admits that knowledge is distributed. Its value changes.</p>
+        <p>The leader must create the conditions in which important signals can surface without fear, ensure that calls for help receive a response and make the trade-offs that individual teams cannot make alone. The longer-term responsibility is not merely to solve today's issue, but to ensure that the intervention leaves the organisation more capable tomorrow.</p>
+        <div class="closing-questions">
+          <p>WHAT DID THE PEOPLE CLOSEST TO THE SERVICE SEE FIRST?</p>
+          <p>WHAT PREVENTED THEM FROM ACTING?</p>
+          <p>WHICH PART OF THE SYSTEM ALLOWED THE PROBLEM TO PERSIST?</p>
+          <p>WHAT SHOULD RETURN TO THE FIELD?</p>
+        </div>
+        <p>Operational excellence is not achieved by designing better processes around people. It is achieved by designing better systems with them.</p>
+      </section>
+
+      <section class="quote final-quote">
+        <div class="mark">“</div>
+        <blockquote>The goal is not simply to restore the service. The system — technical, organisational and human — should be more observable, more capable and more reliable tomorrow than it is today.</blockquote>
+        <small>VINCENT DEFARGE · OPERATIONS LAB</small>
+      </section>
+
+      <section class="next">
+        <div><div class="kicker">NEXT IN THE LAB</div><h2>DESIGNING OPERATIONS<br>BEFORE PRODUCTION.</h2><p>Coming next — from architectural decisions to operational readiness.</p></div>
+        <a href="index.html">VIEW ALL ESSAYS →</a>
+      </section>
+    </article>
+  </main>
+</div>
+
 <footer><div>OPERATIONS<span class="red">LAB</span></div><div>© 2026 Vincent Defarge</div><div>OPERATIONS · RELIABILITY · SERVICE MANAGEMENT</div></footer>
-</body></html>
+</body>
+</html>
