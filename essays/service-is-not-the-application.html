@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The Service Is Not the Application — Operations Lab</title>
+  <meta name="description" content="Why criticality, observability and recovery must follow the business flow. An essay by Vincent Defarge.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.operationslab.fr/essays/service-is-not-the-application.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="The Service Is Not the Application">
+  <meta property="og:description" content="Why criticality, observability and recovery must follow the business flow.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Operations Lab">
+  <meta property="og:url" content="https://www.operationslab.fr/essays/service-is-not-the-application.html">
+  <meta property="og:image" content="https://www.operationslab.fr/images/industrial-hero-article.jpg">
+  <meta property="og:image:secure_url" content="https://www.operationslab.fr/images/industrial-hero-article.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:alt" content="The Service Is Not the Application — an essay by Vincent Defarge">
+  <meta property="article:author" content="https://www.linkedin.com/in/vincent-defarge-165a844b/">
+  <meta property="article:published_time" content="2026-08-25">
+  <meta property="article:modified_time" content="2026-08-25">
+  <meta property="article:section" content="Operational Architecture">
+  <meta name="author" content="Vincent Defarge">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Service Is Not the Application">
+  <meta name="twitter:description" content="Why criticality, observability and recovery must follow the business flow.">
+  <meta name="twitter:image" content="https://www.operationslab.fr/images/industrial-hero-article.jpg">
+  <meta name="twitter:image:alt" content="The Service Is Not the Application — an essay by Vincent Defarge">
+  <meta name="theme-color" content="#f7f7f5">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://www.operationslab.fr/essays/service-is-not-the-application.html#article",
+        "url": "https://www.operationslab.fr/essays/service-is-not-the-application.html",
+        "mainEntityOfPage": { "@id": "https://www.operationslab.fr/essays/service-is-not-the-application.html" },
+        "headline": "The Service Is Not the Application",
+        "description": "Why criticality, observability and recovery must follow the business flow.",
+        "image": ["https://www.operationslab.fr/images/industrial-hero-article.jpg"],
+        "datePublished": "2026-08-25",
+        "dateModified": "2026-08-25",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "articleSection": "Operational Architecture",
+        "keywords": ["IT Operations", "Operational Architecture", "Business Observability", "Service Promise", "Resilience", "Criticality"],
+        "author": {
+          "@type": "Person",
+          "@id": "https://www.operationslab.fr/about/#person",
+          "name": "Vincent Defarge",
+          "url": "https://www.operationslab.fr/about/",
+          "sameAs": ["https://www.linkedin.com/in/vincent-defarge-165a844b/"]
+        },
+        "publisher": { "@id": "https://www.operationslab.fr/about/#person" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.operationslab.fr/essays/service-is-not-the-application.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Operations Lab", "item": "https://www.operationslab.fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Essays", "item": "https://www.operationslab.fr/essays/" },
+          { "@type": "ListItem", "position": 3, "name": "The Service Is Not the Application", "item": "https://www.operationslab.fr/essays/service-is-not-the-application.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../css/article.css">
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="../index.html" aria-label="Operations Lab home">OPERATIONS<span>LAB</span><small>BY VINCENT DEFARGE</small></a>
+  <nav class="nav" aria-label="Main navigation"><a href="../about/index.html">ABOUT</a><a class="active" href="index.html">ESSAYS</a><a href="../podcasts/index.html">PODCASTS</a></nav>
+  <a class="connect" href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank" rel="noopener">LET'S CONNECT ↗</a>
+</header>
+
+<div class="layout">
+  <aside class="side">
+    <a class="back" href="index.html">← ALL ESSAYS</a>
+    <div class="label">IN THIS ESSAY</div>
+    <nav aria-label="Article sections">
+      <a href="#criticality">01&nbsp;&nbsp; Criticality</a>
+      <a href="#observability">02&nbsp;&nbsp; Observability</a>
+      <a href="#recovery">03&nbsp;&nbsp; Recovery</a>
+      <a href="#intent">04&nbsp;&nbsp; Operational intent</a>
+      <a href="#questions">05&nbsp;&nbsp; Six questions</a>
+      <a href="#takeaway">06&nbsp;&nbsp; The takeaway</a>
+    </nav>
+    <div class="sidequote">“<br>Protect the business flow,<br>not only the applications.</div>
+  </aside>
+
+  <main>
+    <article>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="kicker">02 — ESSAY</div>
+          <h1>THE SERVICE IS NOT THE APPLICATION</h1>
+          <div class="dek">Why criticality, observability and recovery must follow the business flow.</div>
+          <div class="meta">10 MIN READ · 25 AUG 2026 · VINCENT DEFARGE · OPERATIONS LAB</div>
+        </div>
+        <div class="hero-img"><img src="../images/industrial-hero-article.jpg" alt="Industrial operations environment"></div>
+      </section>
+
+      <section class="content opening">
+        <div class="kicker">THE INCIDENT</div>
+        <p class="lead">In my first essay, I argued that good operations are not simply managed. They are designed.</p>
+        <p>A real incident helped me understand what that means.</p>
+        <p>Two critical applications were available. Both had support teams on call. But the integration connecting them did not.</p>
+        <p>The data flow stopped — and so did the workshop.</p>
+        <p>This happened in a large industrial organisation. One application captured information from an upstream process. Another supported a downstream workshop. An API carried the data required to keep the physical activity moving.</p>
+        <p>One night, that API failed.</p>
+        <p>The two applications had been classified as critical and had support teams on call. The integration service between them had a lower classification. It did not have equivalent out-of-hours support or resilience arrangements.</p>
+        <p>The information stopped moving. The physical items did not. They continued to accumulate while the workshop could no longer process them. The organisation had to wait until morning for the missing link to be restored.</p>
+        <p>What stayed with me was not that an API had failed. APIs fail.</p>
+        <p class="emphasis">We had protected both applications, but not the business flow between them.</p>
+        <p>At first, this looked like a classification problem. Later, I recognised the same pattern in monitoring after maintenance and rollback during failed releases.</p>
+      </section>
+
+      <section class="statement">A SOUND OPERATIONAL INTENTION HAD FAILED TO BECOME A SUSTAINABLE <span>OPERATIONAL CAPABILITY.</span></section>
+
+      <section class="content" id="criticality">
+        <div class="kicker">01 — CRITICALITY</div>
+        <h2>CRITICALITY STARTS WITH THE <span>BUSINESS FLOW.</span></h2>
+        <p>Organisations often assess criticality application by application.</p>
+        <p>It is understandable. Applications have owners, support models, service levels and technical teams. They are visible objects around which responsibilities can be organised.</p>
+        <p>But the business experiences outcomes, not applications: an order placed, production information received, a shipment prepared.</p>
+        <p>Each outcome crosses applications, interfaces, data stores, infrastructure and people. The Business Promise is delivered by the entire chain.</p>
+        <p>The <strong>Business Promise</strong> describes the outcome the organisation must protect. The <strong>Service Promise</strong> translates that expectation into what the digital service must consistently deliver.</p>
+        <p>When critical applications depend on an integration that lacks sufficient support, resilience or an alternative operating mode, the whole flow remains exposed. Protecting each end of the chain is not enough if the bridge between them has been designed for a different level of importance.</p>
+        <blockquote class="pullquote">Criticality starts with the business flow and its tolerance for disruption. It must then propagate to the operational capabilities and dependencies required to keep the Service Promise.</blockquote>
+        <p>This does not mean assigning the highest classification to every underlying component. A dependency should inherit the requirements of the business flow only when it is necessary to deliver the corresponding level of service.</p>
+        <p>Some capabilities may be essential to the nominal service. Others may be sufficient to maintain a minimum acceptable outcome during disruption.</p>
+        <p>The better question is therefore not simply: <em>Is this component critical?</em></p>
+        <p class="emphasis">For which business outcome and operational state is this component required?</p>
+        <p>Otherwise, we create critical islands connected by fragile bridges.</p>
+      </section>
+
+      <section class="dark-section" id="observability">
+        <div class="content content-dark">
+          <div class="kicker">02 — OBSERVABILITY</div>
+          <h2>OUR USERS HAD BECOME PART OF THE <span>MONITORING SYSTEM.</span></h2>
+          <p>I have seen the same gap appear after security patching and other maintenance activities.</p>
+          <p>An application would be restarted. Servers were up, processes were running, services had restarted and every monitoring dashboard was green.</p>
+          <p>Yet some users could not connect. Others could access the application but could not save an order because it could no longer complete the transaction path to the database.</p>
+          <p>The components were available. The Service Promise was not being fulfilled. And the first alert came from a user.</p>
+          <p>As an immediate safeguard, people on call began performing manual tests after maintenance to verify that essential actions still worked. It was a sensible response, but it exposed an uncomfortable truth.</p>
+          <blockquote class="pullquote light">Our users had become the final layer of our monitoring system.</blockquote>
+          <p>We could observe component health automatically, yet still needed a human being to prove that the service was usable.</p>
+          <p>Technical monitoring remains essential. But operational visibility must go further:</p>
+          <ul class="questions">
+            <li>Are the dependencies communicating?</li>
+            <li>Can the critical business event complete from end to end?</li>
+            <li>Is business impact accumulating even though the technology appears healthy?</li>
+            <li>Do decision-makers have enough reliable information to act in time?</li>
+          </ul>
+          <p>This is what <strong>Business Observability</strong> means in this context: not monitoring more components, but producing trustworthy evidence that meaningful business events are completing — and making their impact visible when they are not.</p>
+          <p>Manual verification can provide immediate protection. A sustainable model should progressively turn critical checks into repeatable and, where appropriate, automated end-to-end evidence.</p>
+          <p class="emphasis">Otherwise, everything can be green while the business has already stopped.</p>
+        </div>
+      </section>
+
+      <section class="content" id="recovery">
+        <div class="kicker">03 — RECOVERY</div>
+        <h2>WE HAD A ROLLBACK REQUIREMENT, NOT A <span>REVERSIBLE DESIGN.</span></h2>
+        <p>The same distinction exists in recovery.</p>
+        <p>For each release, teams were asked to provide a way to roll back so that the service could be restored quickly if something went wrong.</p>
+        <p>The intention was right. But rollback was often too complex to perform. New columns had been introduced, schemas had changed, or data had been written in a structure that the previous version could no longer understand.</p>
+        <p>A simple operational action had become a technical and data-recovery problem precisely when time mattered most.</p>
+        <blockquote class="pullquote">We had a rollback requirement. We had not designed a reversible change.</blockquote>
+        <p>The issue was not necessarily that a team had ignored the requirement. By final release approval, the design choices that made rollback difficult had already been made.</p>
+        <p>A genuine recovery capability must influence schema evolution, version compatibility, data protection, restoration tests and the choice between rollback, roll-forward or a degraded operating mode.</p>
+        <p>It must also be demonstrated. The existence of a plan does not prove that the complete business path can be recovered under representative conditions.</p>
+        <p class="emphasis">Recovery cannot simply be requested at the end. It must be designed from the beginning, tested in reality and revalidated when architecture, data, dependencies or operating assumptions change.</p>
+      </section>
+
+      <section class="learning-section" id="intent">
+        <div class="content">
+          <div class="kicker">04 — THE OPERATIONAL INTENT GAP</div>
+          <h2>PRESERVE THE MEANING, NOT ONLY THE <span>DOCUMENT.</span></h2>
+          <p>These incidents were not the result of one careless team.</p>
+          <p>Each team could protect the object it owned and meet its local requirements. The failure appeared between those objects, disciplines or stages of the service lifecycle.</p>
+          <p>The intention was present: protect a critical activity, verify recovery after maintenance and restore the service quickly if a release failed.</p>
+          <p>What was missing was the continuity needed to transform that intention into something visible, testable and executable. I think of this as an <strong>operational intent gap</strong>.</p>
+
+          <blockquote class="principle">BUSINESS PROMISE → BUSINESS PROCESS → SERVICE PROMISE →<br><span>OPERATIONAL CAPABILITIES → DEPENDENCIES → EVIDENCE → LEARNING.</span></blockquote>
+
+          <p>Business tolerance provides the boundary for that chain: how much interruption or degradation can be absorbed before the Business Promise is compromised.</p>
+
+          <div class="loop" aria-label="Four properties of operational continuity">
+            <div><b>01</b><h3>TRACEABILITY</h3><p>Can a requirement or control be traced back to the business expectation that justified it?</p></div>
+            <div><b>02</b><h3>CONSISTENCY</h3><p>Do criticality, service levels, recovery, observability and support models still express the same intent?</p></div>
+            <div><b>03</b><h3>PROPAGATION</h3><p>When the service changes, can every affected capability, dependency, control and piece of evidence be revalidated?</p></div>
+            <div><b>04</b><h3>FEEDBACK</h3><p>When reality differs from the design, does the learning reach Business, Architecture, Engineering and Service Management?</p></div>
+          </div>
+
+          <p>A good decision may remain in a document, classification or checklist while its operational purpose can no longer be seen or executed. Preserving the document is not enough. The relationships and meaning must survive as the service evolves.</p>
+          <h2>THE PROBLEM IS NOT A LACK OF <span>FRAMEWORKS.</span></h2>
+          <p>None of these ideas is new in isolation.</p>
+          <p>Business Architecture already works with business outcomes, capabilities and value streams. Business Continuity starts from impact and tolerated disruption. Continuous Architecture treats architecture as an evolving set of decisions and explicitly considers operability, resilience and feedback. ITIL provides a holistic Service Value System, value streams, practices and continual improvement.</p>
+          <p>DevOps and DORA research address deployability, database change management, fast feedback and shared responsibility. SRE translates user expectations into measurable reliability objectives and promotes symptom-oriented, user-facing monitoring. Observability makes end-to-end behaviour across distributed systems visible.</p>
+          <p>The problem is not that these disciplines are incomplete or wrong. It is that organisations often implement them through different teams, artefacts, data models and governance mechanisms. Each discipline can work locally while the shared intent gradually fragments between them.</p>
+          <blockquote class="pullquote">Organisations do not lack frameworks. They lose continuity between them.</blockquote>
+          <p>The question is not which framework should own the whole chain. It is whether they continue to describe, support and improve the same promise as the service changes.</p>
+        </div>
+      </section>
+
+      <section class="dark-section" id="questions">
+        <div class="content content-dark">
+          <div class="kicker">05 — OPERATIONS BY DESIGN</div>
+          <h2>SIX QUESTIONS TO ASK WHILE CHOICES ARE STILL <span>REVERSIBLE.</span></h2>
+          <p>Closing this gap does not make Operations responsible for everything or require another approval gate.</p>
+          <p>It requires the right questions to be asked while important choices are still reversible:</p>
+          <ol class="learning-steps">
+            <li><span>01</span><div><h3>THE PROMISE</h3><p>What business outcome must remain true, and what Service Promise supports it?</p></div></li>
+            <li><span>02</span><div><h3>THE TOLERANCE</h3><p>How much disruption can the business tolerate, and what minimum level of service must continue?</p></div></li>
+            <li><span>03</span><div><h3>THE PATH</h3><p>Which operational capabilities and dependencies deliver that outcome in nominal and degraded states?</p></div></li>
+            <li><span>04</span><div><h3>THE EVIDENCE</h3><p>What proves that the critical business event completes and that the resulting business state can be trusted?</p></div></li>
+            <li><span>05</span><div><h3>THE RECOVERY</h3><p>Have recovery and data mechanisms been demonstrated, and what changes would require revalidation?</p></div></li>
+            <li><span>06</span><div><h3>THE DECISION</h3><p>Who has the information, authority and support needed to act — and how will operational learning update the design?</p></div></li>
+          </ol>
+          <p>Applied to the workshop incident, these questions would have made the integration visible as part of the critical business flow. They would also have forced an explicit discussion about its support model, resilience, detection, alternatives and evidence before the night of the failure.</p>
+          <p>The business defines the outcome and its tolerance for disruption. Architecture makes structure, quality attributes and dependencies explicit. Engineering turns decisions into working technology. Service Management translates and governs service expectations across the lifecycle. Operations contributes knowledge about failure, detection, support, recovery and the reality of running the service.</p>
+          <p>This is the research space I am exploring through <strong>Operational Architecture</strong>: not a replacement for these disciplines, and not another gate, but a way to make their transformations and relationships explicit so that operational intent remains traceable, coherent and able to evolve.</p>
+          <p class="emphasis">This is Operations by Design.</p>
+        </div>
+      </section>
+
+      <section class="content" id="takeaway">
+        <div class="kicker">06 — THE TAKEAWAY</div>
+        <h2>THE APPLICATIONS WERE AVAILABLE. THE BUSINESS FLOW <span>WAS NOT.</span></h2>
+        <p>The incident mattered because the criticality of the Business Promise had been lost somewhere between the flow itself and our models of applications, support and resilience.</p>
+        <p>Good operations do not begin when a service enters production.</p>
+        <p>They begin when the Business Promise is translated into a Service Promise, operational capabilities, dependencies, controls and evidence — and when operational learning can travel back in the other direction.</p>
+        <p class="lead">A service is not operational because every component is green.</p>
+      </section>
+
+      <section class="quote final-quote">
+        <div class="mark">“</div>
+        <blockquote>It is operational when the Service Promise is being fulfilled — and resilient when the organisation can demonstrate that the Business Promise remains protected through disruption.</blockquote>
+        <small>VINCENT DEFARGE · OPERATIONS LAB</small>
+      </section>
+
+      <section class="closing-panel" aria-labelledby="continue-heading">
+        <div class="closing-panel-copy">
+          <div class="kicker">CONTINUE THE CONVERSATION</div>
+          <h2 id="continue-heading">WHAT DOES YOUR ORGANISATION PROTECT: THE APPLICATION, OR THE <span>BUSINESS FLOW?</span></h2>
+          <p>I am continuing to explore how operational intent can remain visible across Business, Architecture, Engineering, Service Management and Operations — and I would value your perspective.</p>
+          <div class="closing-actions">
+            <a class="closing-primary" href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank" rel="noopener">CONTINUE ON LINKEDIN ↗</a>
+            <a class="closing-secondary" href="index.html">VIEW ALL ESSAYS →</a>
+          </div>
+        </div>
+        <aside class="author-card" aria-label="About the author">
+          <div class="author-label">WRITTEN BY</div>
+          <h3>VINCENT DEFARGE</h3>
+          <div class="author-role">HEAD OF SERVICE MANAGEMENT OFFICE</div>
+          <p>Exploring how operational thinking can create more reliable services, better decisions and stronger organisations.</p>
+          <a href="../about/index.html">ABOUT VINCENT →</a>
+        </aside>
+      </section>
+    </article>
+  </main>
+</div>
+
+<footer><div>OPERATIONS<span class="red">LAB</span></div><div>© 2026 Vincent Defarge</div><div>OPERATIONS · RELIABILITY · SERVICE MANAGEMENT</div></footer>
+</body>
+</html>

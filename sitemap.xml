@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.operationslab.fr/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://www.operationslab.fr/about/</loc>
@@ -10,11 +10,15 @@
   </url>
   <url>
     <loc>https://www.operationslab.fr/essays/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://www.operationslab.fr/essays/industry-can-teach-it.html</loc>
     <lastmod>2026-08-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.operationslab.fr/essays/service-is-not-the-application.html</loc>
+    <lastmod>2026-08-25</lastmod>
   </url>
   <url>
     <loc>https://www.operationslab.fr/podcasts/</loc>
