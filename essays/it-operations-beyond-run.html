@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IT Operations — Beyond Run — Operations Lab</title>
+  <meta name="description" content="How Operations makes the Service Promise real across Design, Change, Run, Maintain and Improve. An essay by Vanessa Gonçalves.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="Vanessa Gonçalves">
+  <link rel="canonical" href="https://www.operationslab.fr/essays/it-operations-beyond-run.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="IT Operations — Beyond Run">
+  <meta property="og:description" content="How Operations makes the Service Promise real across the entire service lifecycle.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Operations Lab">
+  <meta property="og:url" content="https://www.operationslab.fr/essays/it-operations-beyond-run.html">
+  <meta property="og:image" content="https://www.operationslab.fr/images/og-it-operations-beyond-run.jpg">
+  <meta property="og:image:secure_url" content="https://www.operationslab.fr/images/og-it-operations-beyond-run.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:image:alt" content="IT Operations — Beyond Run, an essay by Vanessa Gonçalves">
+  <meta property="article:published_time" content="2026-09-01T08:00:00+02:00">
+  <meta property="article:modified_time" content="2026-09-01T08:00:00+02:00">
+  <meta property="article:author" content="https://www.linkedin.com/in/vanessa-gon%C3%A7alves-a3389492/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IT Operations — Beyond Run">
+  <meta name="twitter:description" content="How Operations makes the Service Promise real across the entire service lifecycle.">
+  <meta name="twitter:image" content="https://www.operationslab.fr/images/og-it-operations-beyond-run.jpg">
+  <meta name="twitter:image:alt" content="IT Operations — Beyond Run, an essay by Vanessa Gonçalves">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "IT Operations — Beyond Run",
+    "description": "How Operations makes the Service Promise real across Design, Change, Run, Maintain and Improve.",
+    "image": "https://www.operationslab.fr/images/og-it-operations-beyond-run.jpg",
+    "datePublished": "2026-09-01T08:00:00+02:00",
+    "dateModified": "2026-09-01T08:00:00+02:00",
+    "author": {
+      "@type": "Person",
+      "name": "Vanessa Gonçalves",
+      "url": "https://www.linkedin.com/in/vanessa-gon%C3%A7alves-a3389492/",
+      "image": "https://www.operationslab.fr/images/vanessa-goncalves-portrait.png"
+    },
+    "publisher": {
+      "@type": "Person",
+      "@id": "https://www.operationslab.fr/about/#person",
+      "name": "Vincent Defarge",
+      "url": "https://www.operationslab.fr/about/",
+      "sameAs": "https://www.linkedin.com/in/vincent-defarge-165a844b/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.operationslab.fr/essays/it-operations-beyond-run.html"
+    },
+    "keywords": ["IT Operations", "Operational Architecture", "Service Management", "Operations by Design", "Service Promise"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Operations Lab", "item": "https://www.operationslab.fr/"},
+      {"@type": "ListItem", "position": 2, "name": "Essays", "item": "https://www.operationslab.fr/essays/"},
+      {"@type": "ListItem", "position": 3, "name": "IT Operations — Beyond Run", "item": "https://www.operationslab.fr/essays/it-operations-beyond-run.html"}
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="../css/article.css">
+  <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="/" aria-label="Operations Lab home">OPERATIONS<span>LAB</span><small>BY VINCENT DEFARGE</small></a>
+  <nav class="nav" aria-label="Main navigation"><a href="/about/">ABOUT</a><a class="active" href="/essays/">ESSAYS</a><a href="/research/">RESEARCH</a><a href="/podcasts/">PODCASTS</a></nav>
+  <a class="connect" href="https://www.linkedin.com/in/vanessa-gon%C3%A7alves-a3389492/" target="_blank" rel="noopener">CONNECT WITH VANESSA ↗</a>
+</header>
+
+<div class="layout">
+  <aside class="side">
+    <a class="back" href="/essays/">← ALL ESSAYS</a>
+    <div class="label">IN THIS ESSAY</div>
+    <nav aria-label="Article sections">
+      <a href="#design">01&nbsp;&nbsp; Design</a>
+      <a href="#change">02&nbsp;&nbsp; Transition &amp; Change</a>
+      <a href="#run">03&nbsp;&nbsp; Run</a>
+      <a href="#maintain">04&nbsp;&nbsp; Maintain</a>
+      <a href="#improve">05&nbsp;&nbsp; Improve</a>
+      <a href="#resources">06&nbsp;&nbsp; Resources</a>
+      <a href="#loop">07&nbsp;&nbsp; The continuous loop</a>
+    </nav>
+    <div class="sidequote">“<br>Delivering the right service,<br>to the right user,<br>at the right time.</div>
+  </aside>
+
+  <main>
+    <article>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="kicker">03 — ESSAY</div>
+          <h1>IT OPERATIONS — BEYOND RUN</h1>
+          <div class="dek">How Operations makes the Service Promise real across the service lifecycle.</div>
+          <div class="meta">7 MIN READ · 01 SEP 2026 · VANESSA GONÇALVES · OPERATIONS LAB</div>
+        </div>
+        <div class="hero-img"><img src="../images/vanessa-goncalves-portrait.png" alt="Portrait of Vanessa Gonçalves" width="400" height="400"></div>
+      </section>
+
+      <section class="content opening">
+        <div class="kicker">THE SERVICE PROMISE</div>
+        <p class="lead">IT Operations is still often reduced to <em>Run</em>. That view begins too late.</p>
+        <p>The purpose of Operations is not simply to keep systems running or to restore them after an incident. It is to help ensure that the <strong>right service reaches the right user at the right time</strong> — with the expected level of performance, availability, resilience and support.</p>
+        <p>That is the Service Promise.</p>
+        <p>But a service does not suddenly become operational when it reaches production. It is designed, introduced, operated, maintained and improved. Decisions made at every one of those moments influence whether the promise can be kept later.</p>
+        <p class="emphasis">Operations therefore has something to contribute throughout the entire service lifecycle.</p>
+        <p>Not by owning every discipline. Not by adding another approval gate. But by bringing operational knowledge into the decisions that shape the service.</p>
+      </section>
+
+      <section class="statement">OPERABILITY IS NOT ACHIEVED AFTER GO-LIVE. <span>IT IS DESIGNED FROM THE BEGINNING.</span></section>
+
+      <section class="content" id="design">
+        <div class="kicker">01 — DESIGN</div>
+        <h2>DESIGN THE SERVICE FOR <span>OPERABILITY.</span></h2>
+        <p>The first operational questions should be asked while the service is still being designed — not at the end of the project, when someone finally asks what needs to be monitored.</p>
+        <p>Designing a service for operability means defining the conditions required to operate it throughout its lifecycle:</p>
+        <ul class="questions">
+          <li>The operational model and ownership.</li>
+          <li>Support and escalation paths.</li>
+          <li>Observability and monitoring.</li>
+          <li>Service levels, capacity and resilience.</li>
+          <li>Operational procedures and requirements.</li>
+        </ul>
+        <p>This is where <strong>Support by Design</strong> begins.</p>
+        <p>It is also where <strong>Business Observability</strong> starts. Before choosing signals or dashboards, we need to understand what the service is expected to deliver, for whom and under which conditions. Otherwise, we risk monitoring technical components without knowing whether the Service Promise is actually being fulfilled.</p>
+        <blockquote class="pullquote">Operational readiness is not a document produced just before go-live. It is a quality of the service that must be designed from the beginning.</blockquote>
+      </section>
+
+      <section class="dark-section" id="change">
+        <div class="content content-dark">
+          <div class="kicker">02 — TRANSITION &amp; CHANGE</div>
+          <h2>PRESERVE OPERATIONAL INTENT THROUGH <span>DELIVERY.</span></h2>
+          <p>A service can be well designed and still become difficult to operate if its operational intent is lost during delivery.</p>
+          <p>Transition and Change are where design decisions become real operational capabilities.</p>
+          <ul class="questions">
+            <li>Is the service ready for production?</li>
+            <li>Can it be deployed and released safely?</li>
+            <li>Are support teams prepared?</li>
+            <li>Are monitoring, escalation and recovery mechanisms available?</li>
+            <li>Can change be introduced without compromising operability or resilience?</li>
+          </ul>
+          <p>The objective is not simply to move a solution into production. It is to introduce a service that can be understood, supported and sustained once the project team has moved on.</p>
+        </div>
+      </section>
+
+      <section class="content" id="run">
+        <div class="kicker">03 — RUN</div>
+        <h2>OPERATE THE SERVICE — NOT ONLY ITS <span>COMPONENTS.</span></h2>
+        <p>Run is the most visible part of IT Operations. But it is only one part.</p>
+        <p>This is where teams operate the service day to day: monitoring its behaviour, detecting meaningful events, responding to incidents and supporting its users.</p>
+        <p>The quality of Run depends heavily on what was designed earlier.</p>
+        <p>If service boundaries are unclear, alerts lack context. If dependencies are unknown, impact is difficult to assess. If recovery expectations were never defined, teams have to invent them during an incident.</p>
+        <p>Run should not begin with discovering how the service works. It should apply and continuously enrich the operational knowledge built across the lifecycle.</p>
+        <p class="emphasis">The goal is not merely to keep every component green. The real question is whether the service continues to deliver what its consumers need.</p>
+      </section>
+
+      <section class="learning-section" id="maintain">
+        <div class="content">
+          <div class="kicker">04 — MAINTAIN</div>
+          <h2>KEEP THE SERVICE RELIABLE AND <span>SUPPORTABLE.</span></h2>
+          <p>Services change even when their business purpose remains the same.</p>
+          <p>Technologies age. Capacity needs evolve. Components require patching and upgrades. Configurations drift. Dependencies change. Obsolescence introduces new risks.</p>
+          <p>Maintaining a service means keeping it reliable and supportable over time through:</p>
+          <ul class="questions">
+            <li>Maintenance and patching.</li>
+            <li>Upgrades and lifecycle management.</li>
+            <li>Capacity and performance management.</li>
+            <li>Configuration management.</li>
+            <li>Obsolescence management.</li>
+          </ul>
+          <p>These activities are sometimes treated as purely technical work. But they directly influence the Service Promise.</p>
+          <blockquote class="pullquote">Maintenance is not separate from value delivery. It is one of the conditions that makes sustained value possible.</blockquote>
+        </div>
+      </section>
+
+      <section class="dark-section" id="improve">
+        <div class="content content-dark">
+          <div class="kicker">05 — IMPROVE</div>
+          <h2>TURN OPERATIONAL EXPERIENCE INTO <span>BETTER DESIGN.</span></h2>
+          <p>Operational experience creates knowledge.</p>
+          <p>Incidents reveal hidden dependencies. Problems expose structural weaknesses. Repetitive manual work reveals opportunities for automation. Performance issues show where assumptions no longer match reality.</p>
+          <p>Improvement turns that experience into a better service and a better way of operating it.</p>
+          <p>This includes Problem Management, root-cause analysis, reliability improvement, automation, toil reduction, performance optimisation and better observability.</p>
+          <p>But improvement should not stop at fixing today’s operation.</p>
+          <blockquote class="pullquote light">What is learned while running, maintaining or improving a service should influence how its next version is designed and changed.</blockquote>
+          <p>Otherwise, the organisation learns — but the service lifecycle does not.</p>
+        </div>
+      </section>
+
+      <section class="content" id="resources">
+        <div class="kicker">06 — USING RESOURCES WISELY</div>
+        <h2>THE RIGHT RESOURCES FOR THE REQUIRED <span>SERVICE LEVEL.</span></h2>
+        <p>Across these five moments, Operations carries another responsibility: using resources wisely.</p>
+        <p>IT services rely on human, physical, digital, financial and energy resources. The objective is not simply to consume less. It is to allocate the right resources to the required service level and avoid unnecessary consumption.</p>
+        <p>This is where cost and Green IT become part of Operations.</p>
+        <p>Not by deciding what the business needs or which capabilities should exist, but by ensuring that services are appropriately resourced, efficiently operated and sustainably maintained.</p>
+        <p class="emphasis">Reliability, performance, resilience, speed, control, cost and sustainability must be balanced around the Service Promise.</p>
+      </section>
+
+      <section class="learning-section" id="loop">
+        <div class="content">
+          <div class="kicker">07 — THE CONTINUOUS LOOP</div>
+          <h2>FIVE MOMENTS. ONE <span>OPERATIONAL SYSTEM.</span></h2>
+          <p>Design. Transition &amp; Change. Run. Maintain. Improve.</p>
+          <p>These are not five disconnected territories. Together, they form a continuous operational loop.</p>
+          <blockquote class="principle">DESIGN → CHANGE → RUN →<br>MAINTAIN → IMPROVE →<br><span>BACK TO DESIGN.</span></blockquote>
+          <p>The loop closes only when learning can cross organisational boundaries: when an incident can influence a design decision, when maintenance risk can shape a future architecture, and when user experience can change what the organisation measures.</p>
+          <p>That does not happen automatically.</p>
+          <p>It requires clear ownership, decision rights and an operating model capable of keeping different disciplines aligned around the same Business Promise.</p>
+          <p>This is where Operational Architecture becomes useful.</p>
+          <p>Not as another framework or another architecture discipline, but as a way to connect the operational capabilities required to design, introduce, operate, maintain and continuously improve a service.</p>
+        </div>
+      </section>
+
+      <section class="content" id="takeaway">
+        <div class="kicker">THE TAKEAWAY</div>
+        <h2>BEYOND RUN DOES NOT MEAN OPERATIONS SHOULD <span>OWN EVERYTHING.</span></h2>
+        <p>It means that operational consequences are created throughout the service lifecycle — and operational knowledge needs to be present wherever those consequences are shaped.</p>
+        <p>Architecture provides intent. Engineering turns it into a working solution. Service Management creates sustainable practices. Operations brings the knowledge required to keep the Service Promise real over time.</p>
+        <p class="lead">The objective is not to make Operations larger. It is to make the service more operable, more resilient and more useful to the people who depend on it.</p>
+      </section>
+
+      <section class="quote final-quote">
+        <div class="mark">“</div>
+        <blockquote>IT Operations is the art of delivering the right service, to the right user, at the right time — throughout the entire service lifecycle.</blockquote>
+        <small>VANESSA GONÇALVES · OPERATIONS LAB</small>
+      </section>
+
+      <section class="closing-panel" aria-labelledby="continue-heading">
+        <div class="closing-panel-copy">
+          <div class="kicker">CONTINUE THE CONVERSATION</div>
+          <h2 id="continue-heading">HOW DOES OPERATIONAL LEARNING INFLUENCE YOUR NEXT <span>DESIGN DECISION?</span></h2>
+          <p>Vanessa is continuing to explore how operational knowledge, service modelling and Business Observability can make the Service Promise visible throughout the lifecycle.</p>
+          <div class="closing-actions">
+            <a class="closing-primary" href="https://www.linkedin.com/in/vanessa-gon%C3%A7alves-a3389492/" target="_blank" rel="noopener">CONTINUE WITH VANESSA ↗</a>
+            <a class="closing-secondary" href="/research/">EXPLORE THE JOINT RESEARCH →</a>
+          </div>
+        </div>
+        <aside class="author-card" aria-label="About the author">
+          <div class="author-label">WRITTEN BY</div>
+          <h3>VANESSA GONÇALVES</h3>
+          <div class="author-role">SERVICE KNOWLEDGE &amp; OPERATIONAL MODELLING</div>
+          <p>Exploring how service knowledge, observability and operational modelling make relationships visible and actionable across the lifecycle.</p>
+          <a href="/research/">ABOUT THE COLLABORATION →</a>
+        </aside>
+      </section>
+
+      <nav class="essay-navigation essay-navigation-previous" aria-label="Essay navigation">
+        <a href="/essays/service-is-not-the-application.html" rel="prev">
+          <div>
+            <span>PREVIOUS ESSAY · 02</span>
+            <strong>THE SERVICE IS NOT<br>THE APPLICATION.</strong>
+          </div>
+          <b aria-hidden="true">←</b>
+        </a>
+      </nav>
+    </article>
+  </main>
+</div>
+
+<footer><div>OPERATIONS<span class="red">LAB</span></div><div>© 2026 Vincent Defarge · <a href="/legal/">LEGAL &amp; PRIVACY</a></div><div>ESSAY BY VANESSA GONÇALVES</div></footer>
+</body>
+</html>
