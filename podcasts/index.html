@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Podcasts — Operations Lab</title>
-<meta name="description" content="An upcoming Operations Lab podcast exploring Operations, Reliability and Service Management through real conversations.">
+<title>MIO — Modern IT Operations Podcast | Operations Lab</title>
+<meta name="description" content="Listen to MIO — Modern IT Operations, the podcast exploring how IT Operations turn a business promise into operational reality.">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="Vincent Defarge">
 <link rel="canonical" href="https://www.operationslab.fr/podcasts/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta property="og:title" content="Podcasts — Operations Lab">
-<meta property="og:description" content="An upcoming podcast about Operations, Reliability and the people who make systems work.">
+<meta property="og:title" content="MIO — Modern IT Operations Podcast">
+<meta property="og:description" content="Episode 01: When Everything Is Green... But the Service Does Not Work.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Operations Lab">
@@ -22,23 +22,59 @@
 <meta property="og:image:height" content="627">
 <meta property="og:image:alt" content="Operations Lab — Operations are designed before production">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Podcasts — Operations Lab">
-<meta name="twitter:description" content="An upcoming podcast about Operations, Reliability and the people who make systems work.">
+<meta name="twitter:title" content="MIO — Modern IT Operations Podcast">
+<meta name="twitter:description" content="Episode 01: When Everything Is Green... But the Service Does Not Work.">
 <meta name="twitter:image" content="https://www.operationslab.fr/images/og-operations-lab.jpg">
 <meta name="twitter:image:alt" content="Operations Lab — Operations are designed before production">
 <meta name="theme-color" content="#f7f7f5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "@id": "https://www.operationslab.fr/podcasts/#webpage",
-  "url": "https://www.operationslab.fr/podcasts/",
-  "name": "Podcasts — Operations Lab",
-  "description": "An upcoming Operations Lab podcast exploring Operations, Reliability and Service Management through real conversations.",
-  "inLanguage": "en",
-  "isPartOf": { "@id": "https://www.operationslab.fr/#website" }
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.operationslab.fr/podcasts/#webpage",
+      "url": "https://www.operationslab.fr/podcasts/",
+      "name": "MIO — Modern IT Operations Podcast",
+      "description": "A podcast exploring how IT Operations turn a business promise into operational reality.",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://www.operationslab.fr/#website" },
+      "mainEntity": { "@id": "https://www.operationslab.fr/podcasts/#mio" }
+    },
+    {
+      "@type": "PodcastSeries",
+      "@id": "https://www.operationslab.fr/podcasts/#mio",
+      "url": "https://www.operationslab.fr/podcasts/",
+      "name": "MIO — Modern IT Operations",
+      "description": "How IT Operations turn a business promise into operational reality.",
+      "inLanguage": "en",
+      "author": { "@id": "https://www.operationslab.fr/about/#person" },
+      "sameAs": [
+        "https://open.spotify.com/show/56easeRz75Gw5Zi9hOYMB8",
+        "https://podcasts.apple.com/us/podcast/mio-%E2%80%94-modern-it-operations/id6807525921"
+      ]
+    },
+    {
+      "@type": "PodcastEpisode",
+      "@id": "https://www.operationslab.fr/podcasts/#episode-01",
+      "url": "https://www.operationslab.fr/podcasts/#episode-01",
+      "name": "When Everything Is Green... But the Service Does Not Work",
+      "description": "What happens when every technical dashboard is green, but the user still cannot complete the action they need?",
+      "datePublished": "2026-09-01",
+      "timeRequired": "PT9M30S",
+      "inLanguage": "en",
+      "episodeNumber": 1,
+      "partOfSeries": { "@id": "https://www.operationslab.fr/podcasts/#mio" },
+      "author": { "@id": "https://www.operationslab.fr/about/#person" },
+      "sameAs": [
+        "https://open.spotify.com/episode/5jXC6crmcVtxcDtUVGgJjM",
+        "https://podcasts.apple.com/us/podcast/mio-%E2%80%94-modern-it-operations/id6807525921"
+      ]
+    }
+  ]
 }
 </script>
+<link rel="preconnect" href="https://open.spotify.com">
 <link rel="stylesheet" href="../css/podcast.css">
 <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </head>
@@ -54,36 +90,52 @@
 <div class="container hero-grid">
 <div>
 <div class="kicker">01 — PODCASTS</div>
-<h1>IDEAS<br>WORTH<br><span>LISTENING TO.</span></h1>
-<div class="hero-intro">Conversations about Operations, Reliability, Technology and the people who make systems work.</div>
-<p>Podcasts, interviews and conversations where ideas move beyond the slide deck — into real experiences, practical lessons and different ways of thinking.</p>
+<h1>MODERN<br>IT<br><span>OPERATIONS.</span></h1>
+<div class="hero-intro">MIO explores how IT Operations turn a business promise into operational reality.</div>
+<p>Each episode starts with a concrete operational tension and connects service management, reliability, architecture and the reality experienced by users.</p>
 </div>
-<aside class="side-note"><div class="mark">“</div><p>The best conversations change the way you see a problem.</p><small>OPERATIONS LAB · MEDIA</small></aside>
+<aside class="side-note"><div class="mark">“</div><p>A service is operational when the Service Promise is being fulfilled.</p><small>MIO · MODERN IT OPERATIONS</small></aside>
 </div>
 </section>
 
-<section class="container launch">
+<section class="container launch" id="episode-01">
 <div class="kicker">02 — FIRST EPISODE</div>
 <div class="launch-grid">
-<div class="cover"><div class="cover-content"><div class="episode">EPISODE 01 · IN PREPARATION</div><h2>OPERATIONS START<br>BEFORE PRODUCTION.</h2><small>OPERATIONS LAB · CONVERSATION</small></div></div>
+<div class="cover-art"><img src="/images/mio-podcast-cover.webp" alt="MIO — Modern IT Operations podcast cover" width="1200" height="1200"></div>
 <div class="launch-copy">
-<div class="kicker">THE OPENING CONVERSATION</div>
-<h3>WHY OPERATIONS MUST BEGIN BEFORE GO-LIVE.</h3>
-<p>The first episode will explore what changes when operational knowledge enters design, transition and improvement — rather than arriving only after production.</p>
-<div class="status">IN PREPARATION</div>
-<p class="launch-note">It will be published here when the recording is ready. Until then, the essays remain the best place to explore the ideas behind Operations Lab.</p>
-<a class="launch-link" href="/essays/">EXPLORE THE ESSAYS →</a>
+<div class="kicker">MIO — MODERN IT OPERATIONS</div>
+<div class="episode-meta"><span>EPISODE 01</span><span>9:30</span><span>ENGLISH</span></div>
+<h3>WHEN EVERYTHING IS GREEN... BUT THE SERVICE DOES NOT WORK.</h3>
+<p class="lead">What happens when every technical dashboard is green, but the user still cannot complete the action they need?</p>
+<p>This opening episode introduces the Service Promise and explores why Operations cannot begin only when a service goes live — from Design and Transition through Run, Maintain and Improve.</p>
+<div class="topics" aria-label="Episode topics"><span>SERVICE PROMISE</span><span>BUSINESS OBSERVABILITY</span><span>OPERATIONAL ARCHITECTURE</span></div>
+<div class="player-shell">
+<iframe title="Listen to MIO episode 1 on Spotify" src="https://open.spotify.com/embed/episode/5jXC6crmcVtxcDtUVGgJjM?utm_source=generator&amp;theme=0" width="100%" height="152" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+<div class="platform-links">
+<a class="platform-link primary" href="https://open.spotify.com/episode/5jXC6crmcVtxcDtUVGgJjM" target="_blank" rel="noopener">LISTEN ON SPOTIFY ↗</a>
+<a class="platform-link" href="https://podcasts.apple.com/us/podcast/mio-%E2%80%94-modern-it-operations/id6807525921" target="_blank" rel="noopener">APPLE PODCASTS ↗</a>
+</div>
 </div>
 </div>
 </section>
 
 <section class="note">
-<div class="container"><div class="kicker">03 — THE FORMAT</div><h2>A CONVERSATION,<br>NOT A<br><span>PRESENTATION.</span></h2><p>The interesting part of a conversation is often the question behind it. Each episode will start from a concrete operational tension and use experience — not a slide deck — to explore better systems, decisions and ways of leading.</p></div>
+<div class="container">
+<div class="kicker">03 — INSIDE THE EPISODE</div>
+<h2>FROM GREEN<br>DASHBOARDS TO<br><span>OPERATIONAL REALITY.</span></h2>
+<p>The episode follows one question across the service lifecycle: how do we know that the business promise is still being fulfilled when every technical signal appears healthy?</p>
+<div class="takeaways">
+<div><b>01</b><strong>THE SERVICE PROMISE</strong><span>The right service, to the right user, at the right time and in the expected way.</span></div>
+<div><b>02</b><strong>BEYOND RUN</strong><span>Operations contributes across Design, Transition, Run, Maintain and Improve.</span></div>
+<div><b>03</b><strong>OPERATIONAL CONTINUITY</strong><span>Connect business intent, architecture, engineering and operations.</span></div>
+</div>
+</div>
 </section>
 
 <section class="container cta">
-<div><div class="kicker">04 — CONNECT</div><h2>HAVE A QUESTION<br>WORTH<br><span>EXPLORING?</span></h2></div>
-<a href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank" rel="noopener">START A CONVERSATION ↗</a>
+<div><div class="kicker">04 — CONTINUE</div><h2>FOLLOW THE<br>IDEA<br><span>FURTHER.</span></h2></div>
+<div class="cta-actions"><a href="/essays/service-is-not-the-application.html">READ THE RELATED ESSAY →</a><a class="secondary" href="https://www.linkedin.com/in/vincent-defarge-165a844b/" target="_blank" rel="noopener">START A CONVERSATION ↗</a></div>
 </section>
 </main>
 
