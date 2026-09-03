@@ -82,6 +82,8 @@ body .error-panel small{font-size:10px}
 
 body .hero-btn,
 body .latest-card-link,
+body .lab-work-copy>a,
+body .section-links a,
 body .podcast-feature-copy>a,
 body .joint-research-copy>a,
 body .explore-card strong,
@@ -89,6 +91,7 @@ body .about a,
 body .feature strong,
 body .archive-copy strong,
 body .research-collaboration a,
+body .collaboration-actions a,
 body .work-list strong,
 body .people a,
 body .platform-link,
@@ -153,14 +156,20 @@ body .dark-section .kicker,
 body .content-dark .kicker,
 body .dark-section .learning-steps li>span{color:var(--red-text-dark)}
 
+body .why .lab-note-label,
+body .why .lab-note-steps b{color:var(--red-text-dark)}
+
 /* Comfortable touch targets for primary actions */
 body .hero-btn,
 body .latest-card-link,
+body .lab-work-copy>a,
+body .section-links a,
 body .podcast-feature-copy>a,
 body .joint-research-copy>a,
 body .about a,
 body .platform-link,
 body .cta a,
+body .collaboration-actions a,
 body .status a,
 body .actions a,
 body .closing-actions a{
