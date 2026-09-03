@@ -1,0 +1,176 @@
+:root{
+  --red-text-light:#d71920;
+  --red-text-dark:#ef2931;
+  --muted-text-light:#555;
+}
+
+/* Keyboard access */
+.skip-link{
+  position:fixed;
+  top:10px;
+  left:12px;
+  z-index:1000;
+  padding:12px 16px;
+  background:#090909;
+  color:#fff;
+  border:2px solid #fff;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.08em;
+  transform:translateY(-160%);
+  transition:transform .16s ease;
+}
+.skip-link:focus-visible{transform:translateY(0);outline:3px solid var(--red-text-dark);outline-offset:3px}
+#main-content{scroll-margin-top:112px}
+#main-content:focus{outline:none}
+a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+
+/* Shared header and footer legibility */
+.header .logo small{font-size:9px;line-height:1.1}
+.header .nav a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  font-size:11px;
+}
+.header .nav a.active{color:var(--red-text-light)}
+.header .connect{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+  font-size:11px;
+}
+body footer{font-size:10px;line-height:1.6}
+body footer span{color:var(--red-text-light)}
+
+/* Editorial labels and metadata */
+body .kicker{font-size:12px;color:var(--red-text-light)}
+body .meta,
+body [class$="-meta"],
+body [class$="-label"],
+body .role-org,
+body .author-role,
+body .research-role,
+body .section-label,
+body .updated{font-size:11px}
+
+body .meta,
+body .side-note small{color:var(--muted-text-light)}
+
+body .side,
+body .side .back,
+body .side nav a,
+body .sidequote{font-size:11px}
+
+body .num,
+body .latest-card-badge,
+body .latest-card-topics li,
+body .podcast-feature-cover span,
+body .joint-research-image span,
+body .joint-research-roles div,
+body .topics span,
+body .fracture b,
+body .continuity b,
+body .continuity strong,
+body .comparison small,
+body .perspectives b,
+body .loop b,
+body .learning-steps li>span,
+body .summary dt,
+body .error-panel small{font-size:10px}
+
+body .hero-btn,
+body .latest-card-link,
+body .podcast-feature-copy>a,
+body .joint-research-copy>a,
+body .explore-card strong,
+body .about a,
+body .feature strong,
+body .archive-copy strong,
+body .research-collaboration a,
+body .work-list strong,
+body .people a,
+body .platform-link,
+body .cta a,
+body .status a,
+body .actions a,
+body .closing-actions a,
+body .author-card a{font-size:11px}
+
+body .portrait-frame figcaption small,
+body .principle b,
+body .belief b,
+body .research-collaborators b,
+body .research-collaborators span,
+body .joint-label,
+body .person-heading small,
+body .work-list small,
+body .takeaways b,
+body .takeaways strong,
+body .fact strong{font-size:11px}
+
+/* Accessible red for small text on light backgrounds */
+body .nav a.active,
+body .kicker,
+body .side .label,
+body .feature .meta,
+body .feature strong,
+body .archive-copy strong,
+body .num,
+body .role-label,
+body .research-collaborators span,
+body .research-collaboration a,
+body .joint-label,
+body .fracture b,
+body .continuity b,
+body .work-list small,
+body .work-list strong,
+body .research-role,
+body .people a,
+body .platform-link,
+body .cta a.secondary,
+body .comparison .good-win small,
+body .learning-steps li>span,
+body .author-label,
+body .author-card a,
+body .essay-navigation span,
+body .section-label{color:var(--red-text-light)}
+
+/* Equivalent contrast for labels placed on black surfaces */
+body .featured-essay .kicker,
+body .about .kicker,
+body .why .kicker,
+body .themes .kicker,
+body .themes .num,
+body .lenses .kicker,
+body .lenses .person-heading small,
+body .lenses .topics b,
+body .status .kicker,
+body .note .kicker,
+body .note .takeaways b,
+body .dark-section .kicker,
+body .content-dark .kicker,
+body .dark-section .learning-steps li>span{color:var(--red-text-dark)}
+
+/* Comfortable touch targets for primary actions */
+body .hero-btn,
+body .latest-card-link,
+body .podcast-feature-copy>a,
+body .joint-research-copy>a,
+body .about a,
+body .platform-link,
+body .cta a,
+body .status a,
+body .actions a,
+body .closing-actions a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:44px;
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .skip-link{transition:none}
+}
