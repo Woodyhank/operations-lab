@@ -81,6 +81,8 @@ body .summary dt,
 body .error-panel small{font-size:10px}
 
 body .hero-btn,
+body .hero-actions a,
+body .research-hero-actions a,
 body .latest-card-link,
 body .lab-work-copy>a,
 body .section-links a,
@@ -95,6 +97,7 @@ body .collaboration-actions a,
 body .work-list strong,
 body .people a,
 body .platform-link,
+body .status-actions a,
 body .cta a,
 body .status a,
 body .actions a,
@@ -140,6 +143,9 @@ body .author-card a,
 body .essay-navigation span,
 body .section-label{color:var(--red-text-light)}
 
+body .hero-actions a:not(.primary),
+body .research-hero-actions a:not(.primary){color:var(--red-text-light)}
+
 /* Equivalent contrast for labels placed on black surfaces */
 body .featured-essay .kicker,
 body .about .kicker,
@@ -150,6 +156,8 @@ body .lenses .kicker,
 body .lenses .person-heading small,
 body .lenses .topics b,
 body .status .kicker,
+body .status .research-agenda span,
+body .status .status-actions a.secondary,
 body .note .kicker,
 body .note .takeaways b,
 body .dark-section .kicker,
@@ -161,6 +169,8 @@ body .why .lab-note-steps b{color:var(--red-text-dark)}
 
 /* Comfortable touch targets for primary actions */
 body .hero-btn,
+body .hero-actions a,
+body .research-hero-actions a,
 body .latest-card-link,
 body .lab-work-copy>a,
 body .section-links a,
@@ -168,6 +178,7 @@ body .podcast-feature-copy>a,
 body .joint-research-copy>a,
 body .about a,
 body .platform-link,
+body .status-actions a,
 body .cta a,
 body .collaboration-actions a,
 body .status a,
